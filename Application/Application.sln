@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "..\Data\Data.csproj", "{90B05012-5B3E-485A-9259-46E0258830E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisioConference.Data", "..\VisioConference.Data\VisioConference.Data.csproj", "{63F396CE-AC68-449A-B766-9896B2CF6D00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{90B05012-5B3E-485A-9259-46E0258830E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90B05012-5B3E-485A-9259-46E0258830E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90B05012-5B3E-485A-9259-46E0258830E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63F396CE-AC68-449A-B766-9896B2CF6D00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63F396CE-AC68-449A-B766-9896B2CF6D00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63F396CE-AC68-449A-B766-9896B2CF6D00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63F396CE-AC68-449A-B766-9896B2CF6D00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

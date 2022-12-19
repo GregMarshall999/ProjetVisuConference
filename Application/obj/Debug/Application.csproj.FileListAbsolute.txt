@@ -1,0 +1,8 @@
+C:\Users\Admin Stagiaire\Documents\PROJET\Application\bin\Debug\Application.exe.config
+C:\Users\Admin Stagiaire\Documents\PROJET\Application\bin\Debug\Application.exe
+C:\Users\Admin Stagiaire\Documents\PROJET\Application\bin\Debug\Application.pdb
+C:\Users\Admin Stagiaire\Documents\PROJET\Application\obj\Debug\Application.csproj.AssemblyReference.cache
+C:\Users\Admin Stagiaire\Documents\PROJET\Application\obj\Debug\Application.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin Stagiaire\Documents\PROJET\Application\obj\Debug\Application.csproj.CoreCompileInputs.cache
+C:\Users\Admin Stagiaire\Documents\PROJET\Application\obj\Debug\Application.exe
+C:\Users\Admin Stagiaire\Documents\PROJET\Application\obj\Debug\Application.pdb

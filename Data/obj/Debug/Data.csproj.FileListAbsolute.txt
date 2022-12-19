@@ -1,0 +1,8 @@
+C:\Users\Admin Stagiaire\Documents\PROJET\Data\obj\Debug\Data.csproj.AssemblyReference.cache
+C:\Users\Admin Stagiaire\Documents\PROJET\Data\obj\Debug\Data.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin Stagiaire\Documents\PROJET\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\Admin Stagiaire\Documents\PROJET\Data\bin\Debug\Data.exe.config
+C:\Users\Admin Stagiaire\Documents\PROJET\Data\bin\Debug\Data.exe
+C:\Users\Admin Stagiaire\Documents\PROJET\Data\bin\Debug\Data.pdb
+C:\Users\Admin Stagiaire\Documents\PROJET\Data\obj\Debug\Data.exe
+C:\Users\Admin Stagiaire\Documents\PROJET\Data\obj\Debug\Data.pdb
