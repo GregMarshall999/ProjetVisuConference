@@ -20,7 +20,7 @@ namespace VisioConference.Data
         public virtual DbSet<Salon> Salon { get; set; }
         public virtual DbSet<Utilisateur> Utilisateur { get; set; }
         public virtual DbSet<UtilisateurSalon> JointureUtilisateurSalon { get; set; }
-        public virtual DbSet<Collegue> Collegue { get; set; }
+        //public virtual DbSet<Collegue> Collegue { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -29,10 +29,10 @@ namespace VisioConference.Data
                 .WithMany(p => p.SalonsCrees)
                 .HasForeignKey(s => s.ProprietaireId);
 
-            modelBuilder.Entity<Collegue>()
-                .HasOne(c => c.Utilisateur)
-                .WithMany(u => u.ColleguesUtilisateur)
-                .HasForeignKey(c => c.UtilisateurId);
+            //modelBuilder.Entity<Collegue>()
+            //    .HasOne(c => c.Utilisateur)
+            //    .WithMany(u => u.ColleguesUtilisateur)
+            //    .HasForeignKey(c => c.UtilisateurId);
 
             modelBuilder.Entity<UtilisateurSalon>()
                 .HasKey(us => new
@@ -44,12 +44,19 @@ namespace VisioConference.Data
             modelBuilder.Entity<UtilisateurSalon>()
                 .HasOne(us => us.Utilisateur)
                 .WithMany(u => u.UtilisateursSalons)
-                .HasForeignKey(us => us.UtilisateurId);
+                .HasForeignKey(us => us.UtilisateurId)
+                .OnDelete(DeleteBehavior.NoAction);
 
             modelBuilder.Entity<UtilisateurSalon>()
-                 .HasOne(us => us.Salon)
+                .HasOne(us => us.Salon)
                 .WithMany(s => s.UtilisateursSalons)
                 .HasForeignKey(us => us.SalonId);
+
+            modelBuilder.Entity<Message>()
+                .HasOne(m => m.Utilisateur)
+                .WithMany()
+                .HasForeignKey(m => m.UtilisateurId)
+                .OnDelete(DeleteBehavior.NoAction);
         }
     }
 }

@@ -27,32 +27,6 @@ namespace VisioConference.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Collegue",
-                columns: table => new
-                {
-                    id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    UtilisateurId = table.Column<int>(type: "int", nullable: false),
-                    CollegueId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Collegue", x => x.id);
-                    table.ForeignKey(
-                        name: "FK_Collegue_Utilisateur_CollegueId",
-                        column: x => x.CollegueId,
-                        principalTable: "Utilisateur",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Collegue_Utilisateur_UtilisateurId",
-                        column: x => x.UtilisateurId,
-                        principalTable: "Utilisateur",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Salon",
                 columns: table => new
                 {
@@ -69,6 +43,29 @@ namespace VisioConference.Data.Migrations
                         principalTable: "Utilisateur",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "UtilisateurUtilisateur",
+                columns: table => new
+                {
+                    ColleguesId = table.Column<int>(type: "int", nullable: false),
+                    UtilisateursId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UtilisateurUtilisateur", x => new { x.ColleguesId, x.UtilisateursId });
+                    table.ForeignKey(
+                        name: "FK_UtilisateurUtilisateur_Utilisateur_ColleguesId",
+                        column: x => x.ColleguesId,
+                        principalTable: "Utilisateur",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_UtilisateurUtilisateur_Utilisateur_UtilisateursId",
+                        column: x => x.UtilisateursId,
+                        principalTable: "Utilisateur",
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -91,8 +88,7 @@ namespace VisioConference.Data.Migrations
                         name: "FK_JointureUtilisateurSalon_Utilisateur_UtilisateurId",
                         column: x => x.UtilisateurId,
                         principalTable: "Utilisateur",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -118,8 +114,7 @@ namespace VisioConference.Data.Migrations
                         name: "FK_Message_Utilisateur_UtilisateurId",
                         column: x => x.UtilisateurId,
                         principalTable: "Utilisateur",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -141,16 +136,6 @@ namespace VisioConference.Data.Migrations
                         principalTable: "Message",
                         principalColumn: "Id");
                 });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Collegue_CollegueId",
-                table: "Collegue",
-                column: "CollegueId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Collegue_UtilisateurId",
-                table: "Collegue",
-                column: "UtilisateurId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Fichier_MessageId",
@@ -176,18 +161,23 @@ namespace VisioConference.Data.Migrations
                 name: "IX_Salon_ProprietaireId",
                 table: "Salon",
                 column: "ProprietaireId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UtilisateurUtilisateur_UtilisateursId",
+                table: "UtilisateurUtilisateur",
+                column: "UtilisateursId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Collegue");
-
-            migrationBuilder.DropTable(
                 name: "Fichier");
 
             migrationBuilder.DropTable(
                 name: "JointureUtilisateurSalon");
+
+            migrationBuilder.DropTable(
+                name: "UtilisateurUtilisateur");
 
             migrationBuilder.DropTable(
                 name: "Message");

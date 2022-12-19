@@ -22,27 +22,19 @@ namespace VisioConference.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("VisioConference.Models.Collegue", b =>
+            modelBuilder.Entity("UtilisateurUtilisateur", b =>
                 {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
+                    b.Property<int>("ColleguesId")
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
-
-                    b.Property<int>("CollegueId")
+                    b.Property<int>("UtilisateursId")
                         .HasColumnType("int");
 
-                    b.Property<int>("UtilisateurId")
-                        .HasColumnType("int");
+                    b.HasKey("ColleguesId", "UtilisateursId");
 
-                    b.HasKey("id");
+                    b.HasIndex("UtilisateursId");
 
-                    b.HasIndex("CollegueId");
-
-                    b.HasIndex("UtilisateurId");
-
-                    b.ToTable("Collegue");
+                    b.ToTable("UtilisateurUtilisateur");
                 });
 
             modelBuilder.Entity("VisioConference.Models.Fichier", b =>
@@ -163,23 +155,19 @@ namespace VisioConference.Data.Migrations
                     b.ToTable("JointureUtilisateurSalon");
                 });
 
-            modelBuilder.Entity("VisioConference.Models.Collegue", b =>
+            modelBuilder.Entity("UtilisateurUtilisateur", b =>
                 {
-                    b.HasOne("VisioConference.Models.Utilisateur", "collegue")
+                    b.HasOne("VisioConference.Models.Utilisateur", null)
                         .WithMany()
-                        .HasForeignKey("CollegueId")
+                        .HasForeignKey("ColleguesId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("VisioConference.Models.Utilisateur", "Utilisateur")
-                        .WithMany("ColleguesUtilisateur")
-                        .HasForeignKey("UtilisateurId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                    b.HasOne("VisioConference.Models.Utilisateur", null)
+                        .WithMany()
+                        .HasForeignKey("UtilisateursId")
+                        .OnDelete(DeleteBehavior.ClientCascade)
                         .IsRequired();
-
-                    b.Navigation("Utilisateur");
-
-                    b.Navigation("collegue");
                 });
 
             modelBuilder.Entity("VisioConference.Models.Fichier", b =>
@@ -200,7 +188,7 @@ namespace VisioConference.Data.Migrations
                     b.HasOne("VisioConference.Models.Utilisateur", "Utilisateur")
                         .WithMany()
                         .HasForeignKey("UtilisateurId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Salon");
@@ -230,7 +218,7 @@ namespace VisioConference.Data.Migrations
                     b.HasOne("VisioConference.Models.Utilisateur", "Utilisateur")
                         .WithMany("UtilisateursSalons")
                         .HasForeignKey("UtilisateurId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Salon");
@@ -252,8 +240,6 @@ namespace VisioConference.Data.Migrations
 
             modelBuilder.Entity("VisioConference.Models.Utilisateur", b =>
                 {
-                    b.Navigation("ColleguesUtilisateur");
-
                     b.Navigation("SalonsCrees");
 
                     b.Navigation("UtilisateursSalons");
