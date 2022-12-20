@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using VisioConference.Main.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<VisioConferenceMainContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("VisioConferenceMainContext") ?? throw new InvalidOperationException("Connection string 'VisioConferenceMainContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
