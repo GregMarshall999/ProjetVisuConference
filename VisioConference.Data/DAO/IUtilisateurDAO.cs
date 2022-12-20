@@ -7,7 +7,7 @@ using VisioConference.Models;
 
 namespace VisioConference.DAO
 {
-    internal interface IUtilisateurDAO
+    public interface IUtilisateurDAO
     {
         Task<List<Utilisateur>> getAllUtilisateur();
 
