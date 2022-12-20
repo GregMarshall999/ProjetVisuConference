@@ -3694,6 +3694,20 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "VisioConference.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.12",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.12"
+        },
+        "compile": {
+          "bin/placeholder/VisioConference.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VisioConference.Data.dll": {}
+        }
       }
     }
   },
@@ -10499,6 +10513,11 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "VisioConference.Data/1.0.0": {
+      "type": "project",
+      "path": "../VisioConference.Data/VisioConference.Data.csproj",
+      "msbuildProject": "../VisioConference.Data/VisioConference.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10506,7 +10525,8 @@
       "Microsoft.EntityFrameworkCore.Design >= 7.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.12",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.11"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.11",
+      "VisioConference.Data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -10541,7 +10561,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Admin Stagiaire\\Source\\Repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj": {
+              "projectPath": "C:\\Users\\Admin Stagiaire\\Source\\Repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
