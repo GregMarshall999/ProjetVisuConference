@@ -30,10 +30,8 @@ namespace VisioConference.Models
         public virtual ICollection<UtilisateurSalon> UtilisateursSalons { get; set; }
 
 
-
         [InverseProperty("Collegues")]
         public virtual ICollection<Utilisateur> Utilisateurs { get; set; }
         public virtual ICollection<Utilisateur> Collegues { get; set; }
-
     }
 }

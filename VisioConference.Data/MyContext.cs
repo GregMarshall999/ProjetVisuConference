@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace VisioConference.Data
 {
-    internal class MyContext : DbContext
+    public class MyContext : DbContext
     {
         public MyContext(DbContextOptions<MyContext> options)
            : base(options)
@@ -19,7 +19,7 @@ namespace VisioConference.Data
         public virtual DbSet<Message> Message { get; set; }
         public virtual DbSet<Salon> Salon { get; set; }
         public virtual DbSet<Utilisateur> Utilisateur { get; set; }
-        public virtual DbSet<UtilisateurSalon> JointureUtilisateurSalon { get; set; }
+        public virtual DbSet<UtilisateurSalon> UtilisateursSalons { get; set; }
         //public virtual DbSet<Collegue> Collegue { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
