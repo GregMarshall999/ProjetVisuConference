@@ -15,6 +15,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Admin Stagiaire\Source\Repos\ProjetVisuConference\VisioConference.Main
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Admin Stagiaire/Source/Repos/ProjetVisuConference/VisioConference.Main/Views/HelloWorldView/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9Xb3JsZFZpZXdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin Stagiaire/Source/Repos/ProjetVisuConference/VisioConference.Main/Views/HelloWorldView/Welcome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9Xb3JsZFZpZXdcV2VsY29tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Admin Stagiaire/Source/Repos/ProjetVisuConference/VisioConference.Main/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
