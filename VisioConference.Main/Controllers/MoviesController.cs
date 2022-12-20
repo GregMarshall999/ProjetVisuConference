@@ -19,10 +19,35 @@ namespace VisioConference.Main.Controllers
             _context = context;
         }
 
-        // GET: Movies
-        public async Task<IActionResult> Index()
+        [HttpPost]
+        public string Index(string searchString, bool notUsed)
         {
-              return View(await _context.Movie.ToListAsync());
+            return "From [HttpPost]Index: filter on " + searchString;
+        }
+
+        // GET: Movies
+        public async Task<IActionResult> Index(string movieGenre, string searchString)
+        {
+            IQueryable<string> genreQuery = from m in _context.Movie
+                                            orderby m.Genre
+                                            select m.Genre;
+
+            var movies = from m in _context.Movie
+                         select m;
+
+            if (!string.IsNullOrEmpty(searchString))
+                movies = movies.Where(s => s.Title!.Contains(searchString));
+
+            if (!string.IsNullOrEmpty(movieGenre))
+                movies = movies.Where(x => x.Genre == movieGenre);
+
+            var moviesGenreVM = new MovieGenreViewModel
+            {
+                Genres = new SelectList(await genreQuery.Distinct().ToListAsync()),
+                Movies = await movies.ToListAsync()
+            };
+
+            return View(moviesGenreVM);
         }
 
         // GET: Movies/Details/5
