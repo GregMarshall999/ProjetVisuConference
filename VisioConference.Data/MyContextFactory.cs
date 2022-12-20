@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace VisioConference.Data
 {
-    internal class MyContextFactory : IDesignTimeDbContextFactory<MyContext>
+    public class MyContextFactory : IDesignTimeDbContextFactory<MyContext>
     {
         public MyContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<MyContext>();
-            optionsBuilder.UseSqlServer(@"data source=(LocalDb)\MSSQLLocalDB;initial catalog=ProjetVisuConference;integrated security=True;MultipleActiveResultSets=True;");
+            optionsBuilder.UseSqlServer(@"data source=(LocalDb)\MSSQLLocalDB;initial catalog=ProjetVisuConference;integrated security=true;MultipleActiveResultSets=True;");
             return new(optionsBuilder.Options);
         }
     }

@@ -10,7 +10,7 @@ using VisioConference.Models;
 
 namespace VisioDAO.DAO
 {
-    internal class UtilisateurDAO : AbstractDAO, IUtilisateurDAO
+    public class UtilisateurDAO : AbstractDAO, IUtilisateurDAO
     {
         public UtilisateurDAO(MyContext context) : base(context)
         {
