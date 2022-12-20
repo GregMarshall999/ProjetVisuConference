@@ -18,7 +18,6 @@ namespace VisioDAO.DAO
         }
 
 
-        // OK
         async Task ISalonDAO.CreateSalon(Salon salon)
         {
             context.Salon.Add(salon);
