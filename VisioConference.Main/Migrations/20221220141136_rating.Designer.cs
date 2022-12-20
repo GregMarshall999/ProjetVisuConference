@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using VisioConference.Main.Data;
 
@@ -11,9 +12,11 @@ using VisioConference.Main.Data;
 namespace VisioConference.Main.Migrations
 {
     [DbContext(typeof(VisioConferenceMainContext))]
-    partial class VisioConferenceMainContextModelSnapshot : ModelSnapshot
+    [Migration("20221220141136_rating")]
+    partial class rating
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
