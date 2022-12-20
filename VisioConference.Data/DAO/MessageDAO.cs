@@ -10,7 +10,7 @@ using VisioConference.Models;
 
 namespace VisioDAO.DAO
 {
-    internal class MessageDAO : AbstractDAO, IMessageDAO
+    public class MessageDAO : AbstractDAO, IMessageDAO
     {
         public MessageDAO(MyContext context) : base(context)
         {

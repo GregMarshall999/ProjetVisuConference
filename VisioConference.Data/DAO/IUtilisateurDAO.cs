@@ -7,7 +7,7 @@ using VisioConference.Models;
 
 namespace VisioConference.DAO
 {
-    internal interface IUtilisateurDAO
+    public interface IUtilisateurDAO
     {
         Task<List<Utilisateur>> getAllUtilisateur();
 
@@ -19,8 +19,10 @@ namespace VisioConference.DAO
 
         Task DeleteUtilisateur(int Id);
 
-        //Task AddCollegue(Utilisateur utilisateur, Utilisateur collegue);
+        Task AddCollegue(Utilisateur utilisateur, Utilisateur collegue);
 
-        //Task DeleteCollegue(Utilisateur utilisateur, Utilisateur UtilisateurCollegue);
+        Task DeleteCollegue(Utilisateur utilisateur, Utilisateur UtilisateurCollegue);
+
+        Task<Dictionary<int, Utilisateur>> GetAllCollegue(Utilisateur utilisateur);
     }
 }

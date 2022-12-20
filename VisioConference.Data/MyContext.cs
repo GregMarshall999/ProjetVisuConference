@@ -20,7 +20,6 @@ namespace VisioConference.Data
         public virtual DbSet<Salon> Salon { get; set; }
         public virtual DbSet<Utilisateur> Utilisateur { get; set; }
         public virtual DbSet<UtilisateurSalon> UtilisateursSalons { get; set; }
-        //public virtual DbSet<Collegue> Collegue { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

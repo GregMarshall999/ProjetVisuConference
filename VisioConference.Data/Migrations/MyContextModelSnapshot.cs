@@ -152,7 +152,7 @@ namespace VisioConference.Data.Migrations
 
                     b.HasIndex("UtilisateurId");
 
-                    b.ToTable("JointureUtilisateurSalon");
+                    b.ToTable("UtilisateursSalons");
                 });
 
             modelBuilder.Entity("UtilisateurUtilisateur", b =>

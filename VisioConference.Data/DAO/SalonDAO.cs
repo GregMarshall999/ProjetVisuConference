@@ -11,14 +11,13 @@ using VisioConference.Models;
 
 namespace VisioDAO.DAO
 {
-    internal class SalonDAO : AbstractDAO, ISalonDAO
+    public class SalonDAO : AbstractDAO, ISalonDAO
     {
         public SalonDAO(MyContext context) : base(context)
         {
         }
 
 
-        // OK
         async Task ISalonDAO.CreateSalon(Salon salon)
         {
             context.Salon.Add(salon);
