@@ -56,3 +56,11 @@ C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\
 C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\VisioConference.Data.dll
 C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\VisioConference.Data.pdb
 C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.csproj.CopyComplete
+C:\Users\Admin Stagiaire\source\repos\ProjetVisuConference\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.csproj.AssemblyReference.cache
+C:\Users\Admin Stagiaire\source\repos\ProjetVisuConference\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin Stagiaire\source\repos\ProjetVisuConference\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.AssemblyInfoInputs.cache
+C:\Users\Admin Stagiaire\source\repos\ProjetVisuConference\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.AssemblyInfo.cs
+C:\Users\Admin Stagiaire\source\repos\ProjetVisuConference\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.csproj.CoreCompileInputs.cache
+C:\Users\Admin Stagiaire\source\repos\ProjetVisuConference\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.dll
+C:\Users\Admin Stagiaire\source\repos\ProjetVisuConference\VisioConference.Test\obj\Debug\net6.0\refint\VisioConference.Test.dll
+C:\Users\Admin Stagiaire\source\repos\ProjetVisuConference\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.pdb
