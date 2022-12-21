@@ -68,7 +68,10 @@ namespace VisioDAO.DAO
             {
                 if (collegueDB != null)
                 {
-                   utilisateurDB.Collegues.Add(collegue);
+                    if (utilisateurDB.Collegues == null)
+                        utilisateurDB.Collegues = new List<Utilisateur>();
+
+                    utilisateurDB.Collegues.Add(collegueDB);
 
                     context.Entry(utilisateurDB).State = EntityState.Modified;
                     await context.SaveChangesAsync();
@@ -87,6 +90,9 @@ namespace VisioDAO.DAO
             {
                 if (collegueDB != null)
                 {
+                    if (utilisateurDB.Collegues == null)
+                        throw new Exception("Cet utilisateur n'a pas de collègues en BDD");
+
                     utilisateurDB.Collegues.Remove(collegueDB);
 
                     context.Entry(utilisateurDB).State = EntityState.Modified;
@@ -104,6 +110,9 @@ namespace VisioDAO.DAO
             if (utilisateurDB != null)
             {
                 Dictionary<int, Utilisateur> collegues = new Dictionary<int, Utilisateur>();
+
+                if (utilisateurDB.Collegues == null)
+                    return collegues;
 
                 foreach (var item in utilisateurDB.Collegues)
                 {

@@ -9,9 +9,6 @@ namespace VisioConference.Models
 {
     public class Utilisateur
     {
-        public Utilisateur()
-        {
-        }
 
         public enum TypeUtilisateur
         {
