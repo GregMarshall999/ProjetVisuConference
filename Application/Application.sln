@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "..\Data\Data.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisioConference.Data", "..\VisioConference.Data\VisioConference.Data.csproj", "{63F396CE-AC68-449A-B766-9896B2CF6D00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisioConference.Test", "..\VisioConference.Test\VisioConference.Test.csproj", "{1624547C-6333-46C0-BA54-417A07EC015D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisioConference.Test", "..\VisioConference.Test\VisioConference.Test.csproj", "{1624547C-6333-46C0-BA54-417A07EC015D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisioConference.Main", "..\VisioConference.Main\VisioConference.Main.csproj", "{49B2D9A7-556F-4FCF-ACD8-F689214CC7D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{1624547C-6333-46C0-BA54-417A07EC015D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1624547C-6333-46C0-BA54-417A07EC015D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1624547C-6333-46C0-BA54-417A07EC015D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49B2D9A7-556F-4FCF-ACD8-F689214CC7D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49B2D9A7-556F-4FCF-ACD8-F689214CC7D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49B2D9A7-556F-4FCF-ACD8-F689214CC7D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49B2D9A7-556F-4FCF-ACD8-F689214CC7D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

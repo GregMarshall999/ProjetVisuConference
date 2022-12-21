@@ -1,0 +1,46 @@
+﻿@model IEnumerable<VisioConference.Models.Utilisateur>
+
+@{
+	ViewData["Title"] = "Index";
+}
+
+<h1>Utilisateurs Index</h1>
+
+<p>
+	<a asp-action="CreateUtilisateur">Créer Nouveau Utilisateur</a>
+</p>
+
+<table class="table">
+	<thread>
+		<tr>
+			@Html.DisplayNameFor(model => model.Nom)
+		</tr>
+		<tr>
+			@Html.DisplayNameFor(model => model.Prenom)
+		</tr>
+		<tr>
+			@Html.DisplayNameFor(model => model.Email)
+		</tr>
+	</thread>
+	<tbody>
+		@foreach(var item in Model) 
+		{
+			<tr>
+				<td>
+					@Html.DisplayNameFor(modelItem => item.Nom);
+				</td>
+				<td>
+					@Html.DisplayNameFor(modelItem => item.Prenom);
+				</td>
+				<td>
+					@Html.DisplayNameFor(modelItem => item.Email);
+				</td>
+				<td>
+					<a asp-action="Edit" asp-route-id="@item.Id">Editer</a> |
+					<a asp-action="Details" asp-route-id="@item.Id">Détails</a> |
+					<a asp-action="Delete" asp-route-id="@item.Id">Supprimer</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
