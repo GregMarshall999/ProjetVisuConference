@@ -49,11 +49,11 @@ namespace VisioDAO.DAO
 
         async Task IUtilisateurDAO.UpdateUtilisateur(Utilisateur utilisateur)
         {
-            Utilisateur utilisateurDB = await context.Utilisateur.FindAsync(utilisateur.Id);
+            //Utilisateur utilisateurDB = await context.Utilisateur.FindAsync(utilisateur.Id);
 
-            if (utilisateurDB != null)
+            if (utilisateur != null)
             {
-                context.Entry(utilisateurDB).State = EntityState.Modified;
+                context.Entry(utilisateur).State = EntityState.Modified;
                 await context.SaveChangesAsync();
             }
             else throw new Exception("Utilisateur introuvable");

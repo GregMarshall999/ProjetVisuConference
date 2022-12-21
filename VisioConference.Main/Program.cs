@@ -1,8 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using VisioConference.DAO;
 using VisioConference.Data;
 using VisioConference.Main.Data;
 using VisioConference.Main.Models;
+using VisioDAO.DAO;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<VisioConferenceMainContext>(options =>
@@ -11,8 +14,25 @@ builder.Services.AddDbContext<VisioConferenceMainContext>(options =>
 builder.Services.AddDbContext<MyContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("VisioConferenceDataContext") ?? throw new InvalidOperationException("Connection string 'VisioConferenceDataContext' not found.")));
 
+//Injection de la DAO Utilisateur
+//Scoped durée de vie lié à la requete
+builder.Services.AddScoped<IUtilisateurDAO, UtilisateurDAO>();
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
+        options.SlidingExpiration = true;
+        options.AccessDeniedPath = "/Forbidden/";
+    });
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+var cookiePolicyOptions = new CookiePolicyOptions
+{
+    MinimumSameSitePolicy = SameSiteMode.Strict
+};
 
 var app = builder.Build();
 
@@ -35,7 +55,10 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
+
+app.UseCookiePolicy(cookiePolicyOptions);
 
 app.MapControllerRoute(
     name: "default",
