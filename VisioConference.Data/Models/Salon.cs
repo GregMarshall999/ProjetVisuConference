@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,7 @@ namespace VisioConference.Models
 
         public virtual ICollection<Message> Messages { get; set; }
 
+        [Required]
         public Utilisateur Proprietaire { get; set; }
 
         public int ProprietaireId { get; set; }

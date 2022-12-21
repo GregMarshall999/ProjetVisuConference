@@ -104,6 +104,11 @@ await utilisateurDAO.AddCollegue(UtilisateurById3, UtilisateurById);
 await utilisateurDAO.AddCollegue(UtilisateurById3, UtilisateurById2);
 await utilisateurDAO.AddCollegue(UtilisateurById3, UtilisateurById4);
 await utilisateurDAO.AddCollegue(UtilisateurById3, UtilisateurById5);
+await utilisateurDAO.AddCollegue(UtilisateurById2, UtilisateurById5);
+await utilisateurDAO.AddCollegue(UtilisateurById2, UtilisateurById3);
+await utilisateurDAO.AddCollegue(UtilisateurById4, UtilisateurById3);
+
+
 
 Dictionary<int, Utilisateur> collègues = new Dictionary<int, Utilisateur>();
 collègues = await utilisateurDAO.GetAllCollegue(UtilisateurById3);
@@ -114,4 +119,11 @@ foreach (KeyValuePair<int, Utilisateur> collègue in collègues)
         collègue.Key, collègue.Value.Nom);
 }
 
+await utilisateurDAO.DeleteCollegue(UtilisateurById3, UtilisateurById2);
 
+collègues = await utilisateurDAO.GetAllCollegue(UtilisateurById3);
+foreach (KeyValuePair<int, Utilisateur> collègue in collègues)
+{
+    Console.WriteLine("Id: {0}, Nom de l'Utilisateur: {1}",
+        collègue.Key, collègue.Value.Nom);
+}

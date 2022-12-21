@@ -16,19 +16,19 @@ namespace VisioDAO.DAO
         {
         }
 
-        async Task IMessageDAO.createMessage(Message message)
+        async Task IMessageDAO.CreateMessage(Message message)
         {
             context.Message.Add(message);
             await context.SaveChangesAsync();
         }
 
-        async Task IMessageDAO.deleteMessage(int Id)
+        async Task IMessageDAO.DeleteMessage(Message message)
         {
-            Message m = await context.Message.FindAsync(Id);
+            Message m = await context.Message.FindAsync(message.Id);
 
             if (m != null)
             {
-               context.Message.Remove(m);
+               context.Message.Remove(message);
                await context.SaveChangesAsync();
             }
             else throw new Exception("Message introuvable");
@@ -39,7 +39,7 @@ namespace VisioDAO.DAO
             return await context.Message.AsNoTracking().ToListAsync();
         }
 
-        async Task<Message> IMessageDAO.getMessageById(int Id)
+        async Task<Message> IMessageDAO.GetMessageById(int Id)
         {
             Message m = await context.Message.FindAsync(Id);
             if (m != null)

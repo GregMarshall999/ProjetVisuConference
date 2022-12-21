@@ -14,7 +14,7 @@ namespace VisioConference.DAO
         Task<List<Salon>> GetAllSalon();
 
         // Le propriétaire peut ajouter des utilisateurs
-        Task addUserSalon(Salon salon, Utilisateur utilisateur);
+        Task AddUserSalon(Salon salon, Utilisateur utilisateur);
 
         // Le propriétaire pourra supprimer les utilisateurs de son salon s'il le souhaite
         Task DeleteUserSalon(Salon salon, Utilisateur utilisateur);
@@ -25,6 +25,6 @@ namespace VisioConference.DAO
 
         Task<Salon> GetSalonById(int id);
 
-        Task deleteSalon(int id);
+        Task DeleteSalon(Salon salon);
     }
 }
