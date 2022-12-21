@@ -9,9 +9,9 @@ namespace VisioConference.DAO
 {
     public interface IMessageDAO
     {
-        Task createMessage(Message message);
+        Task reateMessage(Message message);
         Task<List<Message>> GetAllMessages();
-        Task deleteMessage(int Id);
-        Task<Message> getMessageById(int Id);
+        Task DeleteMessage(Message message);
+        Task<Message> GetMessageById(int Id);
     }
 }
