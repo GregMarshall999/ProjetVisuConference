@@ -1,15 +1,11 @@
 ﻿using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using VisioConference.DAO;
 using VisioConference.Data;
-using VisioConference.Main.Data;
 using VisioConference.Main.Models;
 using VisioDAO.DAO;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<VisioConferenceMainContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("VisioConferenceMainContext") ?? throw new InvalidOperationException("Connection string 'VisioConferenceMainContext' not found.")));
 
 builder.Services.AddDbContext<MyContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("VisioConferenceDataContext") ?? throw new InvalidOperationException("Connection string 'VisioConferenceDataContext' not found.")));
@@ -39,7 +35,7 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
-    SeedData.Initialize(services);
+    //SeedData.Initialize(services);
 }
 
 // Configure the HTTP request pipeline.
