@@ -49,9 +49,9 @@ namespace VisioDAO.DAO
 
         async Task IUtilisateurDAO.UpdateUtilisateur(Utilisateur utilisateur)
         {
-            Utilisateur utilisateurDB = await context.Utilisateur.FindAsync(utilisateur.Id);
+            //Utilisateur utilisateurDB = await context.Utilisateur.FindAsync(utilisateur.Id);
 
-            if (utilisateurDB != null)
+            if (utilisateur != null)
             {
                 context.Entry(utilisateur).State = EntityState.Modified;
                 await context.SaveChangesAsync();
