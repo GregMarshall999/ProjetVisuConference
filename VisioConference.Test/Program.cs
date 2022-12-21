@@ -67,7 +67,7 @@ await utilisateurDAO.AddUtilisateur(u3);
 await utilisateurDAO.AddUtilisateur(u4);
 await utilisateurDAO.AddUtilisateur(u5);
 
-Utilisateur UtilisateurById = await utilisateurDAO.getUtilisateurById(2);
+Utilisateur UtilisateurById = await utilisateurDAO.GetUtilisateurById(2);
 Console.WriteLine(1);
 
 Console.WriteLine("----------------Update---------------- + GetAllUtilisateur --------------");
@@ -76,7 +76,7 @@ await utilisateurDAO.UpdateUtilisateur(UtilisateurById);
 
 
 List<Utilisateur> utilisateurs = new List<Utilisateur>();
-utilisateurs = await utilisateurDAO.getAllUtilisateur();
+utilisateurs = await utilisateurDAO.GetAllUtilisateur();
 
 utilisateurs.ForEach(u => Console.WriteLine(u.Nom));
 
@@ -89,16 +89,16 @@ utilisateurs.ForEach(u => Console.WriteLine(u.Nom));
 Console.WriteLine("----------- Ajout collègues + GetAllCOllègue ----------------- ");
 
 Utilisateur UtilisateurById2 = new Utilisateur();
-UtilisateurById2 = await utilisateurDAO.getUtilisateurById(21);
+UtilisateurById2 = await utilisateurDAO.GetUtilisateurById(21);
 
 Utilisateur UtilisateurById3 = new Utilisateur();
-UtilisateurById3 = await utilisateurDAO.getUtilisateurById(22);
+UtilisateurById3 = await utilisateurDAO.GetUtilisateurById(22);
 
 Utilisateur UtilisateurById4 = new Utilisateur();
-UtilisateurById4 = await utilisateurDAO.getUtilisateurById(23);
+UtilisateurById4 = await utilisateurDAO.GetUtilisateurById(23);
 
 Utilisateur UtilisateurById5 = new Utilisateur();
-UtilisateurById5 = await utilisateurDAO.getUtilisateurById(24);
+UtilisateurById5 = await utilisateurDAO.GetUtilisateurById(24);
 
 await utilisateurDAO.AddCollegue(UtilisateurById3, UtilisateurById);
 await utilisateurDAO.AddCollegue(UtilisateurById3, UtilisateurById2);

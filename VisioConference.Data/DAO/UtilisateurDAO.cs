@@ -160,9 +160,9 @@ namespace VisioDAO.DAO
             var query = 
                 from u in context.Utilisateur where u.Email == email
                 select u;
-            if (query != null)        
+            if (query != null)
                 return query.FirstOrDefaultAsync();
-            else throw new Exception("Email non présent en BDD")
+            else throw new Exception("Email non présent en BDD");
         }
     }
 }
