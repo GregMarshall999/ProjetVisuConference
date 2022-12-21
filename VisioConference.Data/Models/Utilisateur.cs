@@ -24,6 +24,7 @@ namespace VisioConference.Models
         [Required]
         public string Prenom { get; set; }
 
+        [Required]
         [DataType(DataType.Password)]
         [Display(Name = "Mot de passe")]
         public string MotDePasse { get; set; }
