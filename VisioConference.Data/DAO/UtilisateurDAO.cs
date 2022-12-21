@@ -22,24 +22,24 @@ namespace VisioDAO.DAO
             await context.SaveChangesAsync();
         }
 
-        async Task IUtilisateurDAO.DeleteUtilisateur(int Id)
+        async Task IUtilisateurDAO.DeleteUtilisateur(Utilisateur utilisateur)
         {
-            Utilisateur utilisateurDB = await context.Utilisateur.FindAsync(Id);
+            Utilisateur utilisateurDB = await context.Utilisateur.FindAsync(utilisateur.Id);
 
             if (utilisateurDB != null)
             {
-                context.Utilisateur.Remove(utilisateurDB);
+                context.Utilisateur.Remove(utilisateur);
                 await context.SaveChangesAsync();
             }
             else throw new Exception("Utilisateur introuvable");
         }
 
-        async Task<List<Utilisateur>> IUtilisateurDAO.getAllUtilisateur()
+        async Task<List<Utilisateur>> IUtilisateurDAO.GetAllUtilisateur()
         {
             return await context.Utilisateur.AsNoTracking().ToListAsync();
         }
 
-        async Task<Utilisateur> IUtilisateurDAO.getUtilisateurById(int Id)
+        async Task<Utilisateur> IUtilisateurDAO.GetUtilisateurById(int Id)
         {
             Utilisateur utilisateurDB = await context.Utilisateur.FindAsync(Id);
             if (utilisateurDB != null)
@@ -63,55 +63,106 @@ namespace VisioDAO.DAO
         {
             Utilisateur utilisateurDB = await context.Utilisateur.FindAsync(utilisateur.Id);
             Utilisateur collegueDB = await context.Utilisateur.FindAsync(collegue.Id);
+            var CollegueUtilisateur = await context.Utilisateur
+                        .Include(u => u.Collegues)
+                        .Where(u => u.Id == utilisateur.Id)
+                        .FirstOrDefaultAsync();
+            int i = 0;
 
             if (utilisateurDB != null)
             {
                 if (collegueDB != null)
                 {
-                   utilisateurDB.Collegues.Add(collegue);
+                    if (utilisateurDB.Collegues == null)
+                        utilisateurDB.Collegues = new List<Utilisateur>();
 
-                    context.Entry(utilisateurDB).State = EntityState.Modified;
-                    await context.SaveChangesAsync();
+                    foreach (var item in CollegueUtilisateur.Collegues)
+                    {
+                        if (item == CollegueUtilisateur)
+                            i = 1;
+                    }
+
+                    if (i == 0)
+                    {
+                        utilisateurDB.Collegues.Add(collegueDB);
+
+                        context.Entry(utilisateurDB).State = EntityState.Modified;
+                        await context.SaveChangesAsync();
+                    }
                 }
                 else throw new Exception("Collègue introuvable");
             }
             else throw new Exception("Utilisateur introuvable");
         }
+
 
         async Task IUtilisateurDAO.DeleteCollegue(Utilisateur utilisateur, Utilisateur UtilisateurCollegue)
         {
             Utilisateur utilisateurDB = await context.Utilisateur.FindAsync(utilisateur.Id);
             Utilisateur collegueDB = await context.Utilisateur.FindAsync(UtilisateurCollegue.Id);
+            var CollegueUtilisateur = await context.Utilisateur
+                        .Include(u => u.Collegues)
+                        .Where(u => u.Id == utilisateur.Id)
+                        .FirstOrDefaultAsync();
+            int i = 0;
 
             if (utilisateurDB != null)
             {
                 if (collegueDB != null)
                 {
-                    utilisateurDB.Collegues.Remove(collegueDB);
+                    if (utilisateurDB.Collegues == null)
+                        utilisateurDB.Collegues = new List<Utilisateur>();
 
-                    context.Entry(utilisateurDB).State = EntityState.Modified;
-                    await context.SaveChangesAsync();
+                    foreach (var item in CollegueUtilisateur.Collegues)
+                    {
+                        if (item == CollegueUtilisateur)
+                            i = 1;
+                    }
+
+                    if (i == 0)
+                    {
+                        utilisateurDB.Collegues.Remove(collegueDB);
+                        context.Entry(utilisateurDB).State = EntityState.Modified;
+                        await context.SaveChangesAsync();
+                    }
                 }
                 else throw new Exception("Collègue introuvable");
             }
             else throw new Exception("Utilisateur introuvable");
         }
 
-        async Task<Dictionary<int, Utilisateur>> IUtilisateurDAO.GetAllCollegue(Utilisateur utilisateur)
-        {         
-            Utilisateur utilisateurDB = await context.Utilisateur.FindAsync(utilisateur.Id);
 
-            if (utilisateurDB != null)
+        async Task<Dictionary<int, Utilisateur>> IUtilisateurDAO.GetAllCollegue(Utilisateur utilisateur)
+        {
+            var CollegueUtilisateur = await context.Utilisateur
+                .Include(u => u.Collegues)
+                .Where(u => u.Id == utilisateur.Id)
+                .FirstOrDefaultAsync();
+
+            if (CollegueUtilisateur != null)
             {
                 Dictionary<int, Utilisateur> collegues = new Dictionary<int, Utilisateur>();
 
-                foreach (var item in utilisateurDB.Collegues)
+                if (CollegueUtilisateur.Collegues == null)
+                    return collegues;
+
+                foreach (var item in CollegueUtilisateur.Collegues)
                 {
                     collegues.Add(item.Id, item);
-                } 
+                }
                 return collegues;
             }
-            else throw new Exception("Utilisateur introuvable");               
+            else throw new Exception("Utilisateur introuvable");
+        }
+
+        Task<Utilisateur> IUtilisateurDAO.GetUtilisateurByEmail(string email)
+        {
+            var query = 
+                from u in context.Utilisateur where u.Email == email
+                select u;
+            if (query != null)        
+                return query.FirstOrDefaultAsync();
+            else throw new Exception("Email non présent en BDD")
         }
     }
 }

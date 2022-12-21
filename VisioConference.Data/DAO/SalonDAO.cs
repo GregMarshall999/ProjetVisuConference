@@ -17,7 +17,6 @@ namespace VisioDAO.DAO
         {
         }
 
-
         async Task ISalonDAO.CreateSalon(Salon salon)
         {
             context.Salon.Add(salon);
@@ -37,10 +36,10 @@ namespace VisioDAO.DAO
             else throw new Exception("Salon introuvable");
         }
 
-        async Task ISalonDAO.deleteSalon(int id)
+        async Task ISalonDAO.DeleteSalon(Salon salon)
         {
-            Salon salon = await context.Salon.FindAsync(id);
-            if (salon != null)
+            Salon salonDB = await context.Salon.FindAsync(salon.Id);
+            if (salonDB != null)
             {
                 context.Salon.Remove(salon);
                 await context.SaveChangesAsync();
@@ -48,7 +47,7 @@ namespace VisioDAO.DAO
             else throw new Exception("Salon introuvable");
         }
 
-        async Task ISalonDAO.addUserSalon(Salon salon, Utilisateur utilisateur)
+        async Task ISalonDAO.AddUserSalon(Salon salon, Utilisateur utilisateur)
         {
             Salon salonDB = await context.Salon.FindAsync(salon.Id);
             Utilisateur utilisateurDB = await context.Utilisateur.FindAsync(utilisateur.Id);
@@ -86,7 +85,6 @@ namespace VisioDAO.DAO
             else throw new Exception("Salon n'existe pas en base de données");
         }
 
-
         async Task ISalonDAO.DeleteUserSalon(Salon salon, Utilisateur utilisateur)
         {
             Salon salonDB = await context.Salon.FindAsync(salon.Id);
@@ -105,7 +103,6 @@ namespace VisioDAO.DAO
             resultQuery.ForEach(j => context.UtilisateursSalons.Remove(j));
             await context.SaveChangesAsync();
         }
-
 
         async Task<List<Message>> ISalonDAO.GetMessagesSalon(Salon salon)
         {
