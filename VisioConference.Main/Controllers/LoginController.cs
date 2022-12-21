@@ -1,5 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using VisioConference.DAO;
+using VisioConference.Main.Service;
 using VisioConference.Models;
 
 namespace VisioConference.Main.Controllers
@@ -7,15 +11,20 @@ namespace VisioConference.Main.Controllers
 	public class LoginController : Controller
 	{
 		private readonly IUtilisateurDAO _utilisateurDAO;
+		private readonly IExempleService _exempleService;
 
-		public LoginController(IUtilisateurDAO utilisateurDAO)
+		public LoginController(IUtilisateurDAO utilisateurDAO, IExempleService exempleService)
 		{
 			_utilisateurDAO = utilisateurDAO;
+			_exempleService = exempleService;
 		}
 
 		//Get : Login
 		public IActionResult Index()
 		{
+			if (User.Identity.IsAuthenticated)
+				return RedirectToAction("Index", "Home");
+
 			return View();
 		}
 
@@ -34,7 +43,7 @@ namespace VisioConference.Main.Controllers
 			ViewData["MauvaisMotDePasse"] = "";
 			ViewData["CompteInnexistant"] = "";
 
-			var users = await _utilisateurDAO.getAllUtilisateur();
+			var users = await _utilisateurDAO.GetAllUtilisateur();
 			Utilisateur? found = null;
 
 			users.ForEach(u =>
@@ -59,6 +68,23 @@ namespace VisioConference.Main.Controllers
 		{
 			ViewData["Prenom"] = utilisateur.Prenom;
 			return View();
+		}
+
+		public async Task<IActionResult> Log()
+		{
+			var user = await _exempleService.Login("greg@gmail.com", "123", true);
+			if (user == null) return View();
+
+			await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, user, 
+				new AuthenticationProperties { IsPersistent = Convert.ToBoolean(user.FindFirst(ClaimTypes.IsPersistent).Value) });
+
+			return RedirectToAction("Index", "Home");
+		}
+
+		public async Task<IActionResult> Logout()
+		{
+			await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+			return RedirectToAction("Index", "Home");
 		}
 	}
 }

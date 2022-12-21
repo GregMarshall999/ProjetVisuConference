@@ -17,7 +17,7 @@ namespace VisioConference.Main.Controllers
         // GET: Utilisateurs
         public async Task<IActionResult> Index()
         {
-            return View(await _utilisateurDAO.getAllUtilisateur());
+            return View(await _utilisateurDAO.GetAllUtilisateur());
         }
 
         //GET : Utilisateurs/SignUp
@@ -41,7 +41,7 @@ namespace VisioConference.Main.Controllers
             if (id == null || _utilisateurDAO == null)
                 return NotFound();
 
-            var utilisateur = await _utilisateurDAO.getUtilisateurById((int)id);
+            var utilisateur = await _utilisateurDAO.GetUtilisateurById((int)id);
             if (utilisateur == null)
                 return NotFound();
 
@@ -54,7 +54,7 @@ namespace VisioConference.Main.Controllers
             if (id == null || _utilisateurDAO == null)
                 return NotFound();
 
-            var utilisateur = await _utilisateurDAO.getUtilisateurById((int)id);
+            var utilisateur = await _utilisateurDAO.GetUtilisateurById((int)id);
             if (utilisateur == null)
                 return NotFound();
 
@@ -79,7 +79,7 @@ namespace VisioConference.Main.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                var u = await _utilisateurDAO.getAllUtilisateur();
+                var u = await _utilisateurDAO.GetAllUtilisateur();
                 if (!u.Contains(utilisateur))
                     return NotFound();
                 else
@@ -96,7 +96,7 @@ namespace VisioConference.Main.Controllers
                 return NotFound();
             }
 
-            var utilisateur = await _utilisateurDAO.getUtilisateurById((int)id);
+            var utilisateur = await _utilisateurDAO.GetUtilisateurById((int)id);
             if(utilisateur == null)
             {
                 return NotFound();
@@ -114,10 +114,10 @@ namespace VisioConference.Main.Controllers
                 return Problem("Entity set 'UtilisateurDAO' is null.");
             }
 
-            var utilisateur = await _utilisateurDAO.getUtilisateurById(id);
+            var utilisateur = await _utilisateurDAO.GetUtilisateurById(id);
             if(utilisateur != null)
             {
-                await _utilisateurDAO.DeleteUtilisateur(id);
+                await _utilisateurDAO.DeleteUtilisateur(utilisateur);
             }
 
             return RedirectToAction(nameof(Index));

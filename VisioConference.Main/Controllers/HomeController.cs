@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using VisioConference.Main.Models;
 
 namespace VisioConference.Main.Controllers
 {
+    [Authorize] //all controller needs login
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -13,11 +15,13 @@ namespace VisioConference.Main.Controllers
             _logger = logger;
         }
 
+        [Authorize] //action only
         public IActionResult Index()
         {
             return View();
         }
 
+        [Authorize(Roles = "Admin")] //role only here
         public IActionResult Privacy()
         {
             return View();

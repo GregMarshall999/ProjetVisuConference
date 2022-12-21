@@ -18,7 +18,7 @@ namespace VisioConference.Main.Models
 		public async static void Initialize(IServiceProvider serviceProvider)
 		{
             IUtilisateurDAO utilisateurDAO = serviceProvider.GetRequiredService<IUtilisateurDAO>();
-            var users = await utilisateurDAO.getAllUtilisateur();
+            var users = await utilisateurDAO.GetAllUtilisateur();
 
             if(users.Count != 0)
                 return;
