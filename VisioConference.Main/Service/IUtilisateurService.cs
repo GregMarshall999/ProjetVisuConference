@@ -6,12 +6,12 @@ using System.Text;
 using System.Threading.Tasks;
 using VisioConference.Models;
 
-namespace VisioConference.Service
+namespace VisioConference.Main.Service
 {
     public interface IUtilisateurService
     {
 
-        Task<ClaimsPrincipal> Login (string email, string password, bool isPersistent);
+        Task<ClaimsPrincipal> Login(string email, string password, bool isPersistent);
 
         Task<List<Utilisateur>> GetAllUtilisateur();
 

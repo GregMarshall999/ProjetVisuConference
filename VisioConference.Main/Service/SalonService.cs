@@ -8,7 +8,7 @@ using VisioConference.Data;
 using VisioConference.Models;
 using VisioDAO.DAO;
 
-namespace VisioConference.Service
+namespace VisioConference.Main.Service
 {
     public class SalonService : ISalonService
     {
@@ -21,7 +21,7 @@ namespace VisioConference.Service
 
         async Task ISalonService.AddUserSalon(Salon salon, Utilisateur utilisateur)
         {
-           await Dao.AddUserSalon(salon, utilisateur);
+            await Dao.AddUserSalon(salon, utilisateur);
         }
 
         async Task ISalonService.CreateSalon(Salon salon)
@@ -51,7 +51,7 @@ namespace VisioConference.Service
 
         async Task<Salon> ISalonService.GetSalonById(int id)
         {
-           return await Dao.GetSalonById(id);
+            return await Dao.GetSalonById(id);
         }
 
         async Task<List<Utilisateur>> ISalonService.GetUtilisateursSalon(Salon salon)

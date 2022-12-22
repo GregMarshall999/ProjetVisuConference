@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rUjzoxlHfAMOR5gTmpkYje99QXa4O3Wdqy8WsiqkVzfx9GLvsfMpEEOrUeAXtCSER8jCx82XucdAPNEXhPGOQQ==",
+  "dgSpecHash": "cKbo18qHqRw9KCVW7WibUcpcCgrK2S7JklB8/78/XVk0yAs11NJLKBET6nEox0vsW/YzNpkTAxTT2+7kbibhvg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin Stagiaire\\Documents\\PROJET\\VisioConference.Data\\VisioConference.Data.csproj",
+  "projectFilePath": "C:\\Users\\Admin Stagiaire\\Source\\Repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin Stagiaire\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Admin Stagiaire\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

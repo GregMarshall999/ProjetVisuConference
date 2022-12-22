@@ -8,17 +8,17 @@ using VisioConference.Data;
 using VisioConference.Models;
 using VisioDAO.DAO;
 
-namespace VisioConference.Service
+namespace VisioConference.Main.Service
 {
     public class MessageService : IMessageService
     {
         IMessageDAO Dao;
 
-        public MessageService (MyContext context)
+        public MessageService(MyContext context)
         {
             IMessageDAO Dao = new MessageDAO(context);
         }
-         
+
         async Task IMessageService.DeleteMessage(Message message)
         {
             await Dao.DeleteMessage(message);
