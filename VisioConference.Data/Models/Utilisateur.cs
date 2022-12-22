@@ -18,6 +18,8 @@ namespace VisioConference.Models
 
         public int Id { get; set; }
 
+        public bool IsPersistent { get; set; } = false;
+
         [Required]
         public string Nom { get; set; }
 
