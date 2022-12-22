@@ -35,7 +35,7 @@ namespace VisioConference.Service
                         new Claim(ClaimTypes.Email,"")
                     }));
 
-            // Password entré n'est pas le même qu'en BDD => Name ""
+            // Password entré n'est pas le même qu'en BDD => return Name ""
             if (user.MotDePasse == password) return new ClaimsPrincipal(
                 new ClaimsIdentity(
                     new Claim[]
