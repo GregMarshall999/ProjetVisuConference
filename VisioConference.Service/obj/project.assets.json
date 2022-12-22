@@ -2,19 +2,6 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "Humanizer.Core/2.8.26": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/_._": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Humanizer.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -127,26 +114,6 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Design/6.0.12": {
-        "type": "package",
-        "dependencies": {
-          "Humanizer.Core": "2.8.26",
-          "Microsoft.EntityFrameworkCore.Relational": "6.0.12"
-        },
-        "compile": {
-          "lib/net6.0/_._": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "build/net6.0/Microsoft.EntityFrameworkCore.Design.props": {}
-        }
-      },
       "Microsoft.EntityFrameworkCore.Relational/6.0.12": {
         "type": "package",
         "dependencies": {
@@ -179,18 +146,6 @@
           "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
             "related": ".xml"
           }
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Tools/6.0.12": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "6.0.12"
-        },
-        "compile": {
-          "lib/net6.0/_._": {}
-        },
-        "runtime": {
-          "lib/net6.0/_._": {}
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/6.0.0": {
@@ -782,26 +737,24 @@
             "rid": "win"
           }
         }
+      },
+      "VisioConference.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.12",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.12"
+        },
+        "compile": {
+          "bin/placeholder/VisioConference.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VisioConference.Data.dll": {}
+        }
       }
     }
   },
   "libraries": {
-    "Humanizer.Core/2.8.26": {
-      "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
-      "type": "package",
-      "path": "humanizer.core/2.8.26",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "humanizer.core.2.8.26.nupkg.sha512",
-        "humanizer.core.nuspec",
-        "lib/netstandard1.0/Humanizer.dll",
-        "lib/netstandard1.0/Humanizer.xml",
-        "lib/netstandard2.0/Humanizer.dll",
-        "lib/netstandard2.0/Humanizer.xml",
-        "logo.png"
-      ]
-    },
     "Microsoft.CSharp/4.5.0": {
       "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "type": "package",
@@ -1000,21 +953,6 @@
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Design/6.0.12": {
-      "sha512": "R4rse/Dli8xqyDoQ0BVO8ECAEuwsDvu+qolTyvJl0mmFJodcxTHZQ8dUxxElqk+fTkiHE9rBMIZPoLE10ZCOCA==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.design/6.0.12",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "build/net6.0/Microsoft.EntityFrameworkCore.Design.props",
-        "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll",
-        "lib/net6.0/Microsoft.EntityFrameworkCore.Design.xml",
-        "microsoft.entityframeworkcore.design.6.0.12.nupkg.sha512",
-        "microsoft.entityframeworkcore.design.nuspec"
-      ]
-    },
     "Microsoft.EntityFrameworkCore.Relational/6.0.12": {
       "sha512": "HBtRGHtF0Vf+BIQTkRGiopmE5rLYhj59xPpd17S1tLgYpiHDVbepCuHwh5H63fzjO99Z4tW5wmmEGF7KnD91WQ==",
       "type": "package",
@@ -1041,31 +979,6 @@
         "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.xml",
         "microsoft.entityframeworkcore.sqlserver.6.0.12.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlserver.nuspec"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.Tools/6.0.12": {
-      "sha512": "+WH5m5xlarDK5fTx15x2U7QIxd5SEea0OpNCJuPH2Omwhm/jpq2YPTgSxwbwwP734PvQF6QQOy85TLbOrD5goA==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.tools/6.0.12",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "lib/net6.0/_._",
-        "microsoft.entityframeworkcore.tools.6.0.12.nupkg.sha512",
-        "microsoft.entityframeworkcore.tools.nuspec",
-        "tools/EntityFrameworkCore.PS2.psd1",
-        "tools/EntityFrameworkCore.PS2.psm1",
-        "tools/EntityFrameworkCore.psd1",
-        "tools/EntityFrameworkCore.psm1",
-        "tools/about_EntityFrameworkCore.help.txt",
-        "tools/init.ps1",
-        "tools/net461/any/ef.exe",
-        "tools/net461/win-arm64/ef.exe",
-        "tools/net461/win-x86/ef.exe",
-        "tools/netcoreapp2.0/any/ef.dll",
-        "tools/netcoreapp2.0/any/ef.runtimeconfig.json"
       ]
     },
     "Microsoft.Extensions.Caching.Abstractions/6.0.0": {
@@ -2003,14 +1916,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "VisioConference.Data/1.0.0": {
+      "type": "project",
+      "path": "../VisioConference.Data/VisioConference.Data.csproj",
+      "msbuildProject": "../VisioConference.Data/VisioConference.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Microsoft.EntityFrameworkCore >= 6.0.12",
-      "Microsoft.EntityFrameworkCore.Design >= 6.0.12",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.12",
-      "Microsoft.EntityFrameworkCore.Tools >= 6.0.12"
+      "VisioConference.Data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2020,11 +1935,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin Stagiaire\\Documents\\PROJET\\VisioConference.Data\\VisioConference.Data.csproj",
-      "projectName": "VisioConference.Data",
-      "projectPath": "C:\\Users\\Admin Stagiaire\\Documents\\PROJET\\VisioConference.Data\\VisioConference.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Admin Stagiaire\\Documents\\PROJET\\VisioConference.Service\\VisioConference.Service.csproj",
+      "projectName": "VisioConference.Service",
+      "projectPath": "C:\\Users\\Admin Stagiaire\\Documents\\PROJET\\VisioConference.Service\\VisioConference.Service.csproj",
       "packagesPath": "C:\\Users\\Admin Stagiaire\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin Stagiaire\\Documents\\PROJET\\VisioConference.Data\\obj\\",
+      "outputPath": "C:\\Users\\Admin Stagiaire\\Documents\\PROJET\\VisioConference.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2045,7 +1960,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Admin Stagiaire\\Documents\\PROJET\\VisioConference.Data\\VisioConference.Data.csproj": {
+              "projectPath": "C:\\Users\\Admin Stagiaire\\Documents\\PROJET\\VisioConference.Data\\VisioConference.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -2057,28 +1976,6 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[6.0.12, )"
-          },
-          "Microsoft.EntityFrameworkCore.Design": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[6.0.12, )"
-          },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
-            "target": "Package",
-            "version": "[6.0.12, )"
-          },
-          "Microsoft.EntityFrameworkCore.Tools": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[6.0.12, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
