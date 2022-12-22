@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.service\\VisioConference.service.csproj": {}
+    "C:\\Users\\Admin Stagiaire\\Source\\Repos\\ProjetVisuConference\\VisioConference.service\\VisioConference.service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj": {
+    "C:\\Users\\Admin Stagiaire\\Source\\Repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Admin Stagiaire\\Source\\Repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj",
         "projectName": "VisioConference.Data",
-        "projectPath": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj",
+        "projectPath": "C:\\Users\\Admin Stagiaire\\Source\\Repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj",
         "packagesPath": "C:\\Users\\Admin Stagiaire\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Data\\obj\\",
         "projectStyle": "PackageReference",
@@ -86,12 +86,12 @@
         }
       }
     },
-    "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.service\\VisioConference.service.csproj": {
+    "C:\\Users\\Admin Stagiaire\\Source\\Repos\\ProjetVisuConference\\VisioConference.service\\VisioConference.service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.service\\VisioConference.service.csproj",
+        "projectUniqueName": "C:\\Users\\Admin Stagiaire\\Source\\Repos\\ProjetVisuConference\\VisioConference.service\\VisioConference.service.csproj",
         "projectName": "VisioConference.service",
-        "projectPath": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.service\\VisioConference.service.csproj",
+        "projectPath": "C:\\Users\\Admin Stagiaire\\Source\\Repos\\ProjetVisuConference\\VisioConference.service\\VisioConference.service.csproj",
         "packagesPath": "C:\\Users\\Admin Stagiaire\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.service\\obj\\",
         "projectStyle": "PackageReference",
@@ -115,8 +115,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj": {
-                "projectPath": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj"
+              "C:\\Users\\Admin Stagiaire\\Source\\Repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj": {
+                "projectPath": "C:\\Users\\Admin Stagiaire\\Source\\Repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj"
               }
             }
           }

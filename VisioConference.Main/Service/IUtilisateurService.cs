@@ -2,7 +2,7 @@
 
 namespace VisioConference.Main.Service
 {
-	public interface IExempleService
+	public interface IUtilisateurService
 	{
 		public Task<ClaimsPrincipal?> Login(string username, string password, bool isPersistent);
 	}

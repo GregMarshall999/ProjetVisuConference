@@ -5,18 +5,20 @@ using VisioConference.Models;
 
 namespace VisioConference.Main.Service
 {
-	public class ExempleService : IExempleService
+	public class UtilisateurService : IUtilisateurService
 	{
-		private readonly IUtilisateurDAO utilisateurDAO;
+		private readonly IUtilisateurDAO _utilisateurDAO;
 
-		public ExempleService()
+		public UtilisateurService(IUtilisateurDAO utilisateurDAO)
 		{
-			
+			_utilisateurDAO = utilisateurDAO;
 		}
 
-		async Task<ClaimsPrincipal?> IExempleService.Login(string email, string password, bool isPersistent)
+		async Task<ClaimsPrincipal?> IUtilisateurService.Login(string email, string password, bool isPersistent)
 		{
-			Utilisateur? user = null; //get user from dao with username and password
+			//Utilisateur? user = null; //get user from dao with username and password
+			Utilisateur? user = await _utilisateurDAO.GetUtilisateurByEmail(email);
+
 			if (user is null) return null;
 
 			return new ClaimsPrincipal(

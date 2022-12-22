@@ -11,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<MyContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("VisioConferenceDataContext") ?? throw new InvalidOperationException("Connection string 'VisioConferenceDataContext' not found.")));
 
-builder.Services.AddScoped<IExempleService, ExempleService>();
+builder.Services.AddScoped<IUtilisateurService, UtilisateurService>();
 
 //Injection de la DAO Utilisateur
 //Scoped durée de vie lié à la requete

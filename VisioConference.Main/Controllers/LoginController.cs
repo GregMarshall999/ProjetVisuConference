@@ -11,9 +11,9 @@ namespace VisioConference.Main.Controllers
 	public class LoginController : Controller
 	{
 		private readonly IUtilisateurDAO _utilisateurDAO;
-		private readonly IExempleService _exempleService;
+		private readonly IUtilisateurService _exempleService;
 
-		public LoginController(IUtilisateurDAO utilisateurDAO, IExempleService exempleService)
+		public LoginController(IUtilisateurDAO utilisateurDAO, IUtilisateurService exempleService)
 		{
 			_utilisateurDAO = utilisateurDAO;
 			_exempleService = exempleService;
@@ -36,7 +36,7 @@ namespace VisioConference.Main.Controllers
 
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> Connection([Bind("Email,MotDePasse")] Utilisateur utilisateur)
+		public async Task<IActionResult> Connection([Bind("Email,MotDePasse,IsPersistent")] Utilisateur utilisateur)
 		{
 			//use dao get user by email
 
