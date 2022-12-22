@@ -22,7 +22,7 @@ namespace VisioConference.Main.Controllers
             ICollection<Utilisateur> collegues = await _utilisateurServices
                 .GetUtilisateurCollegues(Convert.ToInt32(User.FindFirst(ClaimTypes.NameIdentifier).Value));
 
-            ICollection<Salon> salons
+            ICollection<Salon> salons;
 
             return View(collegues);
         }
