@@ -20,7 +20,7 @@ builder.Services.AddScoped<IUtilisateurDAO, UtilisateurDAO>();
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
-        options.LoginPath = "/Login";
+        options.LoginPath = "/Login/Connection";
         options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
         options.SlidingExpiration = true;
         options.AccessDeniedPath = "/Forbidden/";
