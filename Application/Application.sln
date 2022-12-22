@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisioConference.Data", "..\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisioConference.Test", "..\VisioConference.Test\VisioConference.Test.csproj", "{1624547C-6333-46C0-BA54-417A07EC015D}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisioConference.Main", "..\VisioConference.Main\VisioConference.Main.csproj", "{F64BC173-298F-4CD3-A361-8189DDE51247}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{1624547C-6333-46C0-BA54-417A07EC015D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1624547C-6333-46C0-BA54-417A07EC015D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1624547C-6333-46C0-BA54-417A07EC015D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F64BC173-298F-4CD3-A361-8189DDE51247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F64BC173-298F-4CD3-A361-8189DDE51247}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F64BC173-298F-4CD3-A361-8189DDE51247}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F64BC173-298F-4CD3-A361-8189DDE51247}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

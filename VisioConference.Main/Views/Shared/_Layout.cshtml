@@ -29,10 +29,13 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Utilisateurs" asp-action="Index">Utilisateurs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Connection">Connection</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Connection">@ViewData["connection"]</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="SignUp" asp-action="CreateAccount">Créer un compte</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="SignUp" asp-action="CreateAccount">@ViewData["creation"]</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Deconnection">@ViewData["deconnection"]</a>
                         </li>
                     </ul>
                 </div>

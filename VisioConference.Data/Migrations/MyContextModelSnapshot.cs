@@ -123,6 +123,9 @@ namespace VisioConference.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsPersistent")
+                        .HasColumnType("bit");
+
                     b.Property<string>("MotDePasse")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

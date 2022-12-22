@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
-using VisioConference.DAO;
 using VisioConference.Main.Service;
 using VisioConference.Models;
 
@@ -10,13 +9,11 @@ namespace VisioConference.Main.Controllers
 {
 	public class LoginController : Controller
 	{
-		private readonly IUtilisateurDAO _utilisateurDAO;
-		private readonly IExempleService _exempleService;
+		private readonly IUtilisateurService _utilisateurService;
 
-		public LoginController(IUtilisateurDAO utilisateurDAO, IExempleService exempleService)
+		public LoginController(IUtilisateurService exempleService)
 		{
-			_utilisateurDAO = utilisateurDAO;
-			_exempleService = exempleService;
+            _utilisateurService = exempleService;
 		}
 
 		//Get : Login
@@ -36,44 +33,30 @@ namespace VisioConference.Main.Controllers
 
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> Connection([Bind("Email,MotDePasse")] Utilisateur utilisateur)
+		public async Task<IActionResult> Connection([Bind("Email,MotDePasse,IsPersistent")] Utilisateur utilisateur)
 		{
-			//use dao get user by email
-
 			ViewData["MauvaisMotDePasse"] = "";
 			ViewData["CompteInnexistant"] = "";
 
-			var users = await _utilisateurDAO.GetAllUtilisateur();
-			Utilisateur? found = null;
+			var user = await _utilisateurService.Login(utilisateur.Email, utilisateur.MotDePasse, utilisateur.IsPersistent);
 
-			users.ForEach(u =>
-			{
-				if (u.Email == utilisateur.Email)
-					found = u;
-			});
+			if (user is null)
+				return View();
 
-			if(found != null)
+			var email = user.FindFirst(ClaimTypes.Email).Value;
+			var name = user.FindFirst(ClaimTypes.Name).Value;
+
+			if(email == "")
 			{
-				if(found.MotDePasse == utilisateur.MotDePasse)
-					return RedirectToAction(nameof(Connected), found);
-				ViewData["MauvaisMotDePasse"] = "Mot de passe erroné.";
-				return View(found);
+				ViewData["CompteInnexistant"] = "Cette adresse mail n'est pas associé à un compte Utilisateur.";
+				return View(utilisateur);
 			}
 
-			ViewData["CompteInnexistant"] = "Cette adresse mail n'est pas associé à un compte Utilisateur.";
-			return View(found);
-		}
-
-		public IActionResult Connected(Utilisateur utilisateur)
-		{
-			ViewData["Prenom"] = utilisateur.Prenom;
-			return View();
-		}
-
-		public async Task<IActionResult> Log()
-		{
-			var user = await _exempleService.Login("greg@gmail.com", "123", true);
-			if (user == null) return View();
+			if(name == "")
+			{
+				ViewData["MauvaisMotDePasse"] = "Mot de passe erroné.";
+				return View(utilisateur);
+			}
 
 			await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, user, 
 				new AuthenticationProperties { IsPersistent = Convert.ToBoolean(user.FindFirst(ClaimTypes.IsPersistent).Value) });
@@ -81,7 +64,7 @@ namespace VisioConference.Main.Controllers
 			return RedirectToAction("Index", "Home");
 		}
 
-		public async Task<IActionResult> Logout()
+		public async Task<IActionResult> Deconnection()
 		{
 			await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 			return RedirectToAction("Index", "Home");
