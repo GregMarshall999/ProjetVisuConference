@@ -18,9 +18,10 @@ namespace VisioConference.Service
 
         string CookieAuthentification;
 
-        public UtilisateurService(MyContext context, string CookieAuthentification)
+        public UtilisateurService(MyContext context, string cookieAuthentification)
         {
             IUtilisateurDAO Dao = new UtilisateurDAO(context);
+            this.CookieAuthentification = cookieAuthentification;
         }
 
         async Task<ClaimsPrincipal> IUtilisateurService.Login(string email, string password, bool isPersistent)
