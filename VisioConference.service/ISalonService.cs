@@ -30,5 +30,7 @@ namespace VisioConference.Service
         // Utilisateur est propriétaire du salon ?? -> True = oui
         Task<bool> IsProprietaireSalon(Utilisateur utilisateur, Salon salon);
 
+        Task<List<Salon>> GetSalonCree(int utilisateurId);
+        Task<List<Salon>> GetSalonInvitee(int utilisteurId);
     }
 }

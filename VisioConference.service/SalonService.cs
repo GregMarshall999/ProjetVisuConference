@@ -70,5 +70,15 @@ namespace VisioConference.Service
                 return true;
             else return false;
         }
+
+        async Task<List<Salon>> ISalonService.GetSalonCree(int utilisateurId)
+        {
+            return null;
+        }
+
+        async Task<List<Salon>> ISalonService.GetSalonInvitee(int utilisteurId)
+        {
+            return null;
+        }
     }
 }
