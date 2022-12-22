@@ -14,11 +14,11 @@ namespace VisioConference.Models
         {
             ADMIN,
             MEMBRE
-        } 
+        }
 
-         public int Id { get; set; }
+        public int Id { get; set; }
 
-         public bool IsPersistent { get; set; } = false;
+        public bool IsPersistent { get; set; } = false;
 
         [Required]
         public string Nom { get; set; }

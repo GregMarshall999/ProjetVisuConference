@@ -5,19 +5,19 @@ using VisioConference.Models;
 
 namespace VisioConference.Main.Service
 {
-    public class UtilisateurService : IUtilisateurService
-    {
+	public class UtilisateurService : IUtilisateurService
+	{
 		private readonly IUtilisateurDAO _utilisateurDAO;
 
 		public UtilisateurService(IUtilisateurDAO utilisateurDAO)
-        {
+		{
 			_utilisateurDAO = utilisateurDAO;
-        }
+		}
 
 		async Task<ClaimsPrincipal?> IUtilisateurService.Login(string email, string password, bool isPersistent)
-        {
+		{
 			Utilisateur? user = await _utilisateurDAO.GetUtilisateurByEmail(email);
-           
+
 			if (user is null) 
 				return new ClaimsPrincipal(
                 new ClaimsIdentity(
@@ -27,10 +27,10 @@ namespace VisioConference.Main.Service
                     }));
 
 			if (user.MotDePasse != password) 
-				return new ClaimsPrincipal(
-                new ClaimsIdentity(
-                    new Claim[]
-                    {
+			return new ClaimsPrincipal(
+				new ClaimsIdentity(
+					new Claim[]
+					{
 							new Claim(ClaimTypes.Name, "")
                     }));
 
@@ -38,13 +38,13 @@ namespace VisioConference.Main.Service
                 new ClaimsIdentity(
                     new Claim[]
                     {
-                        new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                        new Claim(ClaimTypes.Name, user.Prenom),
-                        new Claim(ClaimTypes.Email, email),
+						new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+						new Claim(ClaimTypes.Name, user.Prenom),
+						new Claim(ClaimTypes.Email, email),
 						new Claim(ClaimTypes.IsPersistent, isPersistent.ToString()),
-                    },
-                    CookieAuthenticationDefaults.AuthenticationScheme));
-        }
+					}, 
+					CookieAuthenticationDefaults.AuthenticationScheme));
+		}
 
         async Task<ICollection<Utilisateur>> IUtilisateurService.GetUtilisateurCollegues(int id)
         {
@@ -82,5 +82,5 @@ namespace VisioConference.Main.Service
 
             return true;
         }
-    }
+	}
 }

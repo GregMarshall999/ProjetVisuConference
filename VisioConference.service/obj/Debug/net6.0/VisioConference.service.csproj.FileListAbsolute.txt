@@ -1,0 +1,30 @@
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.service\bin\Debug\net6.0\VisioConference.service.deps.json
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.service\bin\Debug\net6.0\VisioConference.service.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.service\bin\Debug\net6.0\VisioConference.service.pdb
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.service\bin\Debug\net6.0\VisioConference.Data.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.service\bin\Debug\net6.0\VisioConference.Data.pdb
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.service\obj\Debug\net6.0\VisioConference.service.csproj.AssemblyReference.cache
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.service\obj\Debug\net6.0\VisioConference.service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.service\obj\Debug\net6.0\VisioConference.service.AssemblyInfoInputs.cache
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.service\obj\Debug\net6.0\VisioConference.service.AssemblyInfo.cs
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.service\obj\Debug\net6.0\VisioConference.service.csproj.CoreCompileInputs.cache
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.service\obj\Debug\net6.0\VisioConference.service.csproj.CopyComplete
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.service\obj\Debug\net6.0\VisioConference.service.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.service\obj\Debug\net6.0\refint\VisioConference.service.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.service\obj\Debug\net6.0\VisioConference.service.pdb
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.service\obj\Debug\net6.0\ref\VisioConference.service.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.service\bin\Debug\net6.0\VisioConference.service.deps.json
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.service\bin\Debug\net6.0\VisioConference.service.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.service\bin\Debug\net6.0\VisioConference.service.pdb
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.service\bin\Debug\net6.0\VisioConference.Data.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.service\bin\Debug\net6.0\VisioConference.Data.pdb
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.service\obj\Debug\net6.0\VisioConference.service.csproj.AssemblyReference.cache
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.service\obj\Debug\net6.0\VisioConference.service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.service\obj\Debug\net6.0\VisioConference.service.AssemblyInfoInputs.cache
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.service\obj\Debug\net6.0\VisioConference.service.AssemblyInfo.cs
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.service\obj\Debug\net6.0\VisioConference.service.csproj.CoreCompileInputs.cache
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.service\obj\Debug\net6.0\VisioConference.service.csproj.CopyComplete
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.service\obj\Debug\net6.0\VisioConference.service.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.service\obj\Debug\net6.0\refint\VisioConference.service.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.service\obj\Debug\net6.0\VisioConference.service.pdb
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.service\obj\Debug\net6.0\ref\VisioConference.service.dll

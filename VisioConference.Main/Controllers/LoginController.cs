@@ -48,15 +48,15 @@ namespace VisioConference.Main.Controllers
 
 			if(email == "")
 			{
-				ViewData["CompteInnexistant"] = "Cette adresse mail n'est pas associé à un compte Utilisateur.";
+			ViewData["CompteInnexistant"] = "Cette adresse mail n'est pas associé à un compte Utilisateur.";
 				return View(utilisateur);
-			}
+		}
 
 			if(name == "")
-			{
+		{
 				ViewData["MauvaisMotDePasse"] = "Mot de passe erroné.";
 				return View(utilisateur);
-			}
+		}
 
 			await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, user, 
 				new AuthenticationProperties { IsPersistent = Convert.ToBoolean(user.FindFirst(ClaimTypes.IsPersistent).Value) });
