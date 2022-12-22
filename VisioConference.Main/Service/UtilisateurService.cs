@@ -46,10 +46,28 @@ namespace VisioConference.Main.Service
                     CookieAuthenticationDefaults.AuthenticationScheme));
         }
 
-        async Task<Dictionary<int, Utilisateur>> IUtilisateurService.GetUtilisateurCollegues(int id)
+        async Task<ICollection<Utilisateur>> IUtilisateurService.GetUtilisateurCollegues(int id)
         {
+            ICollection<Utilisateur> collegues = new List<Utilisateur>();
             Utilisateur u = await _utilisateurDAO.GetUtilisateurById(id);
-            return await _utilisateurDAO.GetAllCollegue(u);
+            Dictionary<int, Utilisateur> dicoCollegues = await _utilisateurDAO.GetAllCollegue(u);
+                    
+            foreach (KeyValuePair<int, Utilisateur> entry in dicoCollegues)
+            {
+                collegues.Add(entry.Value);
+            }
+
+            return collegues;
+        }
+
+        async Task<Utilisateur> IUtilisateurService.GetUtilisateur(int? id)
+        {
+            return await _utilisateurDAO.GetUtilisateurById((int)id);
+        }
+
+        async Task IUtilisateurService.RemoveCollegue(Utilisateur utilisateur, Utilisateur collegue)
+        {
+            await _utilisateurDAO.DeleteCollegue(utilisateur, collegue);
         }
     }
 }

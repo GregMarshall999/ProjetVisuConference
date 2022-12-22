@@ -1,0 +1,38 @@
+﻿@model VisioConference.Models.Utilisateur
+
+@{
+	ViewData["Title"] = "Suprimer";
+}
+
+<h1>Suprimer</h1>
+
+<h3>Voulez vous retirer ce collègue?</h3>
+<div>
+	<h4>Collègue</h4>
+	<hr/>
+	<dl class="row">
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.Nom)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.Nom)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.Prenom)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.Prenom)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.Email)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.Email)
+		</dd>
+	</dl>
+	<form asp-action="Suprimer">
+		<input type="hidden" asp-for="Id"/>
+		<input type="submit" value="Suprimer" class="btn btn-danger"/>
+		<a asp-action="Index">Retour page principale</a>
+	</form>
+</div>
