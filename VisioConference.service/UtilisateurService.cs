@@ -56,9 +56,15 @@ namespace VisioConference.Service
                     CookieAuthentification));
         }
 
-        async Task IUtilisateurService.AddCollegue(Utilisateur utilisateur, Utilisateur collegue)
+
+        // Rdcupérer utilisateur, (ID utilisateur, Email collegue) 
+        // Renvoie true ou false selon si c'est ok
+        async Task<bool> IUtilisateurService.AddCollegue(int utilisateurId, string collegueEmail)
         {
-            await Dao.AddCollegue(utilisateur, collegue);
+            Utilisateur utilisateurDB = await Dao.GetUtilisateurById(utilisateurId);
+            Utilisateur collegueDB = await Dao.GetUtilisateurByEmail(collegueEmail);
+
+            return await Dao.AddCollegue(utilisateurDB, collegueDB);
         }
 
         async Task IUtilisateurService.AddUtilisateur(Utilisateur utilisateur)
@@ -99,6 +105,16 @@ namespace VisioConference.Service
         async Task IUtilisateurService.UpdateUtilisateur(Utilisateur utilisateur)
         {
             await Dao.UpdateUtilisateur(utilisateur);
+        }
+
+        async Task<List<Utilisateur>> IUtilisateurService.GetListCollegue(Utilisateur utilisateur)
+        {
+            Dictionary<int, Utilisateur> dictionnaireCollegue = new Dictionary<int, Utilisateur>();
+            dictionnaireCollegue = await Dao.GetAllCollegue(utilisateur);
+
+            List<Utilisateur> collegue = new List<Utilisateur>(dictionnaireCollegue.Values);
+
+            return collegue;
         }
     }
 }

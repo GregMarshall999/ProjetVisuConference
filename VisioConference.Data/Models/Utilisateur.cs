@@ -36,7 +36,7 @@ namespace VisioConference.Models
         public DateTime DateDeNaissance { get; set; }
 
         [Required]
-        [RegularExpression(@"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$")]
+        [RegularExpression(@"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$", ErrorMessage ="Email non valide")]
         public string Email { get; set; }
 
         public virtual ICollection<Salon> SalonsCrees { get; set; }
