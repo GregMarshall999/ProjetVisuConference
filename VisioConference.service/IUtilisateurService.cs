@@ -10,8 +10,7 @@ namespace VisioConference.Service
 {
     public interface IUtilisateurService
     {
-
-        Task<ClaimsPrincipal> Login (string email, string password, bool isPersistent);
+        Task<ClaimsPrincipal> Login(string email, string password, bool isPersistent);
 
         Task<List<Utilisateur>> GetAllUtilisateur();
 
@@ -23,11 +22,13 @@ namespace VisioConference.Service
 
         Task DeleteUtilisateur(Utilisateur utilisateur);
 
-        Task AddCollegue(Utilisateur utilisateur, Utilisateur collegue);
+        Task<bool> AddCollegue(int utilisateurId, string collegueEmail);
 
         Task DeleteCollegue(Utilisateur utilisateur, Utilisateur UtilisateurCollegue);
 
         Task<Dictionary<int, Utilisateur>> GetAllCollegue(Utilisateur utilisateur);
+
+        Task<List<Utilisateur>> GetListCollegue(Utilisateur utilisateur);
 
         Task<Utilisateur> GetUtilisateurByEmail(string email);
     }

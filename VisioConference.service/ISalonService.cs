@@ -26,5 +26,9 @@ namespace VisioConference.Service
         Task<Salon> GetSalonById(int id);
 
         Task DeleteSalon(Salon salon);
+
+        // Utilisateur est propriétaire du salon ?? -> True = oui
+        Task<bool> IsProprietaireSalon(Utilisateur utilisateur, Salon salon);
+
     }
 }

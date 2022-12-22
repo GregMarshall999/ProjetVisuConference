@@ -19,7 +19,7 @@ namespace VisioConference.DAO
 
         Task DeleteUtilisateur(Utilisateur utilisateur);
 
-        Task AddCollegue(Utilisateur utilisateur, Utilisateur collegue);
+        Task<bool> AddCollegue(Utilisateur utilisateur, Utilisateur collegue);
 
         Task DeleteCollegue(Utilisateur utilisateur, Utilisateur UtilisateurCollegue);
 

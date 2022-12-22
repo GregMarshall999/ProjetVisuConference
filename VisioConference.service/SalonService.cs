@@ -21,11 +21,14 @@ namespace VisioConference.Service
 
         async Task ISalonService.AddUserSalon(Salon salon, Utilisateur utilisateur)
         {
-           await Dao.AddUserSalon(salon, utilisateur);
+            Salon salonDB = await Dao.GetSalonById(salon.Id);
+            if (salonDB.ProprietaireId == utilisateur.Id)
+                await Dao.AddUserSalon(salon, utilisateur);
+            else throw new Exception("Seul le propriétaire peut ajouter un utilisateur à ce salon");
         }
 
         async Task ISalonService.CreateSalon(Salon salon)
-        {
+        {   
             await Dao.CreateSalon(salon);
         }
 
@@ -51,12 +54,21 @@ namespace VisioConference.Service
 
         async Task<Salon> ISalonService.GetSalonById(int id)
         {
-           return await Dao.GetSalonById(id);
+            return await Dao.GetSalonById(id);
         }
 
         async Task<List<Utilisateur>> ISalonService.GetUtilisateursSalon(Salon salon)
         {
             return await Dao.GetUtilisateursSalon(salon);
+        }
+
+        async Task<bool> ISalonService.IsProprietaireSalon(Utilisateur utilisateur, Salon salon)
+        {
+            Salon salonDB = await Dao.GetSalonById(salon.Id);
+
+            if(salonDB.ProprietaireId == utilisateur.Id)
+                return true;
+            else return false;
         }
     }
 }

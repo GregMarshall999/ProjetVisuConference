@@ -59,7 +59,7 @@ namespace VisioDAO.DAO
             else throw new Exception("Utilisateur introuvable");
         }
 
-        async Task IUtilisateurDAO.AddCollegue(Utilisateur utilisateur, Utilisateur collegue)
+        async Task<bool> IUtilisateurDAO.AddCollegue(Utilisateur utilisateur, Utilisateur collegue)
         {
             Utilisateur utilisateurDB = await context.Utilisateur.FindAsync(utilisateur.Id);
             Utilisateur collegueDB = await context.Utilisateur.FindAsync(collegue.Id);
@@ -88,11 +88,12 @@ namespace VisioDAO.DAO
 
                         context.Entry(utilisateurDB).State = EntityState.Modified;
                         await context.SaveChangesAsync();
+                        return true;
                     }
                 }
-                else throw new Exception("Collègue introuvable");
+                return false;
             }
-            else throw new Exception("Utilisateur introuvable");
+            return false;
         }
 
 
@@ -160,9 +161,8 @@ namespace VisioDAO.DAO
             var query = 
                 from u in context.Utilisateur where u.Email == email
                 select u;
-            if (query != null)
+
                 return query.FirstOrDefaultAsync();
-            else throw new Exception("Email non présent en BDD");
         }
     }
 }
