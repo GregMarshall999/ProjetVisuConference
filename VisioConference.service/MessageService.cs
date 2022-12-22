@@ -12,31 +12,31 @@ namespace VisioConference.Service
 {
     public class MessageService : IMessageService
     {
-        IMessageDAO _Dao;
+        IMessageDAO Dao;
 
-        public MessageService(IMessageDAO Dao, MyContext context)
+        public MessageService (MyContext context)
         {
-            _Dao = Dao;
+            IMessageDAO Dao = new MessageDAO(context);
         }
          
         async Task IMessageService.DeleteMessage(Message message)
         {
-            await _Dao.DeleteMessage(message);
+            await Dao.DeleteMessage(message);
         }
 
         async Task<List<Message>> IMessageService.GetAllMessages()
         {
-            return await _Dao.GetAllMessages();
+            return await Dao.GetAllMessages();
         }
 
         async Task<Message> IMessageService.GetMessageById(int Id)
         {
-            return await _Dao.GetMessageById(Id);
+            return await Dao.GetMessageById(Id);
         }
 
         async Task IMessageService.CreateMessage(Message message)
         {
-            await _Dao.CreateMessage(message);
+            await Dao.CreateMessage(message);
         }
     }
 }
