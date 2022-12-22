@@ -10,7 +10,7 @@ using VisioConference.Models;
 using VisioDAO.DAO;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
-namespace VisioConference.Service
+namespace VisioConference.Main.Service
 {
     public class UtilisateurService : IUtilisateurService
     {
@@ -18,15 +18,27 @@ namespace VisioConference.Service
         IUtilisateurDAO Dao;
         public UtilisateurService(MyContext context)
         {
-            IUtilisateurDAO Dao = new UtilisateurDAO(context);       
+            IUtilisateurDAO Dao = new UtilisateurDAO(context);
         }
-
-
 
         async Task<ClaimsPrincipal> IUtilisateurService.Login(string email, string password, bool isPersistent)
         {
-            Utilisateur? user = null; //get user from dao with username and password
-            if (user is null) return null;
+            Utilisateur? user = await Dao.GetUtilisateurByEmail(email); //get user from dao with username and password
+           
+            if (user is null) return new ClaimsPrincipal(
+                new ClaimsIdentity(
+                    new Claim[]
+                    {
+                        new Claim(ClaimTypes.Email,"")
+                    }));
+
+            // Password entré n'est pas le même qu'en BDD => Name ""
+            if (user.MotDePasse == password) return new ClaimsPrincipal(
+                new ClaimsIdentity(
+                    new Claim[]
+                    {
+                        new Claim(ClaimTypes.Name,"")
+                    }));
 
             return new ClaimsPrincipal(
                 new ClaimsIdentity(
@@ -40,7 +52,6 @@ namespace VisioConference.Service
                     },
                     CookieAuthenticationDefaults.AuthenticationScheme));
         }
-
 
 
         async Task IUtilisateurService.AddCollegue(Utilisateur utilisateur, Utilisateur collegue)
