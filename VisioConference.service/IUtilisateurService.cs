@@ -30,5 +30,14 @@ namespace VisioConference.Service
         Task<Dictionary<int, Utilisateur>> GetAllCollegue(Utilisateur utilisateur);
 
         Task<Utilisateur> GetUtilisateurByEmail(string email);
+
+
+        // Est propriétaire du salon ?? -> True = oui
+        Task<bool> IsProprietaireSalon (Utilisateur utilisateur, Salon salon);
+
+        // Est propriétaire du message ?? -> True = oui
+        Task<bool> IsProprietaireMessage (Utilisateur utilisateur, Message message);
+
+
     }
 }

@@ -38,5 +38,14 @@ namespace VisioConference.Service
         {
             await Dao.CreateMessage(message);
         }
+
+        async Task<bool> IMessageService.IsProprietaireMessage(Utilisateur utilisateur, Message message)
+        {
+            Message messageDB = await Dao.GetMessageById(message.Id);
+
+            if (messageDB.UtilisateurId == utilisateur.Id)
+                return true;
+            else return false;
+        }
     }
 }

@@ -12,5 +12,6 @@ namespace VisioConference.Service {
         Task<List<Message>> GetAllMessages();
         Task DeleteMessage(Message message);
         Task<Message> GetMessageById(int Id);
+        Task<bool> IsProprietaireMessage(Utilisateur utilisateur, Message message);
     }
 }
