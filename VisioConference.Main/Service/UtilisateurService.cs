@@ -1,50 +1,55 @@
 ﻿using Microsoft.AspNetCore.Authentication.Cookies;
 using System.Security.Claims;
+using System.Text;
+using System.Threading.Tasks;
 using VisioConference.DAO;
+using VisioConference.Data;
 using VisioConference.Models;
+using VisioDAO.DAO;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace VisioConference.Main.Service
 {
-	public class UtilisateurService : IUtilisateurService
-	{
+    public class UtilisateurService : IUtilisateurService
+    {
 		private readonly IUtilisateurDAO _utilisateurDAO;
 
 		public UtilisateurService(IUtilisateurDAO utilisateurDAO)
-		{
+        {
 			_utilisateurDAO = utilisateurDAO;
-		}
+        }
 
 		async Task<ClaimsPrincipal?> IUtilisateurService.Login(string email, string password, bool isPersistent)
-		{
+        {
 			//Utilisateur? user = null; //get user from dao with username and password
 			Utilisateur? user = await _utilisateurDAO.GetUtilisateurByEmail(email);
-
+           
 			if (user is null) 
 				return new ClaimsPrincipal(
-					new ClaimsIdentity(
-						new Claim[]
-						{
+                new ClaimsIdentity(
+                    new Claim[]
+                    {
 							new Claim(ClaimTypes.Email, "")
-						}));
+                    }));
 
 			if (user.MotDePasse != password) 
 				return new ClaimsPrincipal(
-					new ClaimsIdentity(
-						new Claim[]
-						{
+                new ClaimsIdentity(
+                    new Claim[]
+                    {
 							new Claim(ClaimTypes.Name, "")
-						}));
+                    }));
 
-			return new ClaimsPrincipal(
-				new ClaimsIdentity(
-					new Claim[]
-					{
-						new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-						new Claim(ClaimTypes.Name, user.Prenom),
-						new Claim(ClaimTypes.Email, email),
+            return new ClaimsPrincipal(
+                new ClaimsIdentity(
+                    new Claim[]
+                    {
+                        new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                        new Claim(ClaimTypes.Name, user.Prenom),
+                        new Claim(ClaimTypes.Email, email),
 						new Claim(ClaimTypes.IsPersistent, isPersistent.ToString()),
-					}, 
-					CookieAuthenticationDefaults.AuthenticationScheme));
-		}
-	}
+                    },
+                    CookieAuthenticationDefaults.AuthenticationScheme));
+        }
+    }
 }
