@@ -18,6 +18,20 @@ namespace VisioConference.Main.Controllers
         [Authorize] //action only
         public IActionResult Index()
         {
+            if(User.Identity.IsAuthenticated)
+            {
+                ViewData["connection"] = "";
+                ViewData["creation"] = "";
+                ViewData["deconnection"] = "Déconnection";
+                return RedirectToAction("Index", "UtilisateurPage");
+            }
+            else
+            {
+                ViewData["connection"] = "Connection";
+                ViewData["creation"] = "Créer un compte";
+                ViewData["deconnection"] = "";
+            }
+
             return View();
         }
 

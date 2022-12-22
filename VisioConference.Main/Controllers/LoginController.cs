@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
-using VisioConference.DAO;
 using VisioConference.Main.Service;
 using VisioConference.Models;
 
@@ -10,12 +9,10 @@ namespace VisioConference.Main.Controllers
 {
 	public class LoginController : Controller
 	{
-		private readonly IUtilisateurDAO _utilisateurDAO;
 		private readonly IUtilisateurService _utilisateurService;
 
-		public LoginController(IUtilisateurDAO utilisateurDAO, IUtilisateurService exempleService)
+		public LoginController(IUtilisateurService exempleService)
 		{
-			_utilisateurDAO = utilisateurDAO;
             _utilisateurService = exempleService;
 		}
 
@@ -67,18 +64,7 @@ namespace VisioConference.Main.Controllers
 			return RedirectToAction("Index", "Home");
 		}
 
-		public async Task<IActionResult> Log()
-		{
-			var user = await _utilisateurService.Login("greg@gmail.com", "123", true);
-			if (user == null) return View();
-
-			await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, user, 
-				new AuthenticationProperties { IsPersistent = Convert.ToBoolean(user.FindFirst(ClaimTypes.IsPersistent).Value) });
-
-			return RedirectToAction("Index", "Home");
-		}
-
-		public async Task<IActionResult> Logout()
+		public async Task<IActionResult> Deconnection()
 		{
 			await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 			return RedirectToAction("Index", "Home");

@@ -1,12 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authentication.Cookies;
 using System.Security.Claims;
-using System.Text;
-using System.Threading.Tasks;
 using VisioConference.DAO;
-using VisioConference.Data;
 using VisioConference.Models;
-using VisioDAO.DAO;
-using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace VisioConference.Main.Service
 {
@@ -21,7 +16,6 @@ namespace VisioConference.Main.Service
 
 		async Task<ClaimsPrincipal?> IUtilisateurService.Login(string email, string password, bool isPersistent)
         {
-			//Utilisateur? user = null; //get user from dao with username and password
 			Utilisateur? user = await _utilisateurDAO.GetUtilisateurByEmail(email);
            
 			if (user is null) 
@@ -50,6 +44,12 @@ namespace VisioConference.Main.Service
 						new Claim(ClaimTypes.IsPersistent, isPersistent.ToString()),
                     },
                     CookieAuthenticationDefaults.AuthenticationScheme));
+        }
+
+        async Task<Dictionary<int, Utilisateur>> IUtilisateurService.GetUtilisateurCollegues(int id)
+        {
+            Utilisateur u = await _utilisateurDAO.GetUtilisateurById(id);
+            return await _utilisateurDAO.GetAllCollegue(u);
         }
     }
 }
