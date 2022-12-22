@@ -1,0 +1,46 @@
+﻿@model IEnumerable<VisioConference.Models.Utilisateur>
+
+@{
+	ViewData["Title"] = "UtilisateurPage";
+}
+
+<h2>Bienvenu @ViewData["name"]</h2>
+
+<p>
+	<a asp-action="AjouterCollegue">Ajouter un collègue</a>
+</p>
+<h4>Collègues</h4>
+<table class="table">
+	<thread>
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.Nom)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Prenom)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Email)
+			</th>
+			<th></th>
+		</tr>
+	</thread>
+	<tbody>
+		@foreach (var item in Model) {
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.Nom)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Prenom)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Email)
+				</td>
+				<td>
+					<a asp-action="Suprimer" asp-route-id="@item.Id">Suprimer</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
