@@ -12,8 +12,21 @@ namespace VisioDAO.DAO
 {
     public class UtilisateurDAO : AbstractDAO, IUtilisateurDAO
     {
+
         public UtilisateurDAO(MyContext context) : base(context)
         {
+        }
+
+        // Méthode pour hascher MDP avant de le mettre en BDD
+        public string Hash(string password)
+        {
+            var bytes = new UTF8Encoding().GetBytes(password);
+            byte[] hashBytes;
+            using (var algortithm = new System.Security.Cryptography.SHA512Managed())
+            {
+                hashBytes = algortithm.ComputeHash(bytes);
+            }          
+            return Convert.ToBase64String(hashBytes);
         }
 
         async Task IUtilisateurDAO.AddUtilisateur(Utilisateur utilisateur)
