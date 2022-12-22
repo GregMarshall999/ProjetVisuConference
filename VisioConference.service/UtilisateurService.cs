@@ -8,7 +8,6 @@ using VisioConference.DAO;
 using VisioConference.Data;
 using VisioConference.Models;
 using VisioDAO.DAO;
-using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace VisioConference.Service
 {
@@ -16,17 +15,33 @@ namespace VisioConference.Service
     {
 
         IUtilisateurDAO Dao;
-        public UtilisateurService(MyContext context)
+
+        string CookieAuthentification;
+
+        public UtilisateurService(MyContext context, string cookieAuthentification)
         {
-            IUtilisateurDAO Dao = new UtilisateurDAO(context);       
+            IUtilisateurDAO Dao = new UtilisateurDAO(context);
+            this.CookieAuthentification = cookieAuthentification;
         }
-
-
 
         async Task<ClaimsPrincipal> IUtilisateurService.Login(string email, string password, bool isPersistent)
         {
-            Utilisateur? user = null; //get user from dao with username and password
-            if (user is null) return null;
+            Utilisateur? user = await Dao.GetUtilisateurByEmail(email); //get user from dao with username and password
+           
+            if (user is null) return new ClaimsPrincipal(
+                new ClaimsIdentity(
+                    new Claim[]
+                    {
+                        new Claim(ClaimTypes.Email,"")
+                    }));
+
+            // Password entré n'est pas le même qu'en BDD => return Name ""
+            if (user.MotDePasse == password) return new ClaimsPrincipal(
+                new ClaimsIdentity(
+                    new Claim[]
+                    {
+                        new Claim(ClaimTypes.Name,"")
+                    }));
 
             return new ClaimsPrincipal(
                 new ClaimsIdentity(
@@ -38,14 +53,18 @@ namespace VisioConference.Service
 						//new Claim(ClaimTypes.Role, user.role), //<- if user has roles
 						new Claim(ClaimTypes.IsPersistent, isPersistent.ToString()),
                     },
-                    CookieAuthenticationDefaults.AuthenticationScheme));
+                    CookieAuthentification));
         }
 
 
-
-        async Task IUtilisateurService.AddCollegue(Utilisateur utilisateur, Utilisateur collegue)
+        // Rdcupérer utilisateur, (ID utilisateur, Email collegue) 
+        // Renvoie true ou false selon si c'est ok
+        async Task<bool> IUtilisateurService.AddCollegue(int utilisateurId, string collegueEmail)
         {
-            await Dao.AddCollegue(utilisateur, collegue);
+            Utilisateur utilisateurDB = await Dao.GetUtilisateurById(utilisateurId);
+            Utilisateur collegueDB = await Dao.GetUtilisateurByEmail(collegueEmail);
+
+            return await Dao.AddCollegue(utilisateurDB, collegueDB);
         }
 
         async Task IUtilisateurService.AddUtilisateur(Utilisateur utilisateur)
@@ -86,6 +105,16 @@ namespace VisioConference.Service
         async Task IUtilisateurService.UpdateUtilisateur(Utilisateur utilisateur)
         {
             await Dao.UpdateUtilisateur(utilisateur);
+        }
+
+        async Task<List<Utilisateur>> IUtilisateurService.GetListCollegue(Utilisateur utilisateur)
+        {
+            Dictionary<int, Utilisateur> dictionnaireCollegue = new Dictionary<int, Utilisateur>();
+            dictionnaireCollegue = await Dao.GetAllCollegue(utilisateur);
+
+            List<Utilisateur> collegue = new List<Utilisateur>(dictionnaireCollegue.Values);
+
+            return collegue;
         }
     }
 }
