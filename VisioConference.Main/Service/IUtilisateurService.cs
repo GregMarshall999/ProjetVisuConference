@@ -10,5 +10,6 @@ namespace VisioConference.Main.Service
         public Task<ICollection<Utilisateur>> GetUtilisateurCollegues(int id);
         public Task<Utilisateur> GetUtilisateur(int? id);
         public Task RemoveCollegue(Utilisateur utilisateur, Utilisateur collegue);
+        public Task<bool> AddCollegueToUtilisateur(int utilisateurId, string collegueEmail);
     }
 }

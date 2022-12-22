@@ -9,6 +9,7 @@
 <p>
 	<a asp-action="AjouterCollegue">Ajouter un collègue</a>
 </p>
+<h4>Collègues</h4>
 <table class="table">
 	<thread>
 		<tr>
@@ -28,16 +29,16 @@
 		@foreach (var item in Model) {
 			<tr>
 				<td>
-					@Html.DisplayFor(modelItem => item.Nom);
+					@Html.DisplayFor(modelItem => item.Nom)
 				</td>
 				<td>
-					@Html.DisplayFor(modelItem => item.Prenom);
+					@Html.DisplayFor(modelItem => item.Prenom)
 				</td>
 				<td>
-					@Html.DisplayFor(modelItem => item.Email);
+					@Html.DisplayFor(modelItem => item.Email)
 				</td>
 				<td>
-					<a asp-action="Suprimer" asp-route-id="@item.Id"></a>
+					<a asp-action="Suprimer" asp-route-id="@item.Id">Suprimer</a>
 				</td>
 			</tr>
 		}

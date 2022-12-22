@@ -31,7 +31,7 @@ namespace VisioConference.Main.Controllers
 		public async Task<IActionResult> CreateAccount([Bind("Id,Nom,Prenom,MotDePasse,DateDeNaissance,Email")] Utilisateur utilisateur)
 		{
 			await _utilisateurDAO.AddUtilisateur(utilisateur);
-			return RedirectToAction(nameof(Index));
+			return RedirectToAction("Index", "Home");
 		}
 	}
 }

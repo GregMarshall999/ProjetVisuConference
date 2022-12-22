@@ -25,9 +25,18 @@ namespace VisioConference.Main.Controllers
             return View(collegues);
         }
 
-        public async Task<IActionResult> AjouterCollegue()
+        public IActionResult AjouterCollegue()
         {
             return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AjouterCollegue([Bind("Email")] Utilisateur collegue)
+        {
+            bool added = await _utilisateurServices
+                .AddCollegueToUtilisateur(Convert.ToInt32(User.FindFirst(ClaimTypes.NameIdentifier).Value), collegue.Email);
+            return RedirectToAction(nameof(Index));
         }
 
         public async Task<IActionResult> Suprimer(int? id)
@@ -42,7 +51,7 @@ namespace VisioConference.Main.Controllers
             return View(collegue);
         }
 
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName("Suprimer")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ConfirmerSup(int id)
         {

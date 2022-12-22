@@ -69,5 +69,18 @@ namespace VisioConference.Main.Service
         {
             await _utilisateurDAO.DeleteCollegue(utilisateur, collegue);
         }
+
+        async Task<bool> IUtilisateurService.AddCollegueToUtilisateur(int utilisateurId, string collegueEmail)
+        {
+            Utilisateur col = await _utilisateurDAO.GetUtilisateurByEmail(collegueEmail);
+            Utilisateur u = await _utilisateurDAO.GetUtilisateurById(utilisateurId);
+
+            if (col is null || u is null)
+                return false;
+
+            await _utilisateurDAO.AddCollegue(u, col);
+
+            return true;
+        }
     }
 }
