@@ -27,3 +27,10 @@
 /VisioConference.Test/obj/Debug/net6.0/VisioConference.Test.csproj.AssemblyReference.cache
 /VisioConference.Test/obj/Debug/net6.0/VisioConference.Test.assets.cache
 /VisioConference.Test/obj/Debug/net6.0/apphost.exe
+*.vsidx
+/VisioConference.Data/obj/Debug/net6.0/VisioConference.Data.assets.cache
+/VisioConference.Data/obj/Debug/net6.0/VisioConference.Data.GeneratedMSBuildEditorConfig.editorconfig
+/VisioConference.service/obj/project.assets.json
+/VisioConference.service/obj/VisioConference.service.csproj.nuget.dgspec.json
+/VisioConference.service/obj/project.nuget.cache
+/VisioConference.service/obj/VisioConference.service.csproj.nuget.g.props
