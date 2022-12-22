@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\damie\\Desktop\\Formation\\ProjetVisioGit\\VisioConference.Data\\VisioConference.Data.csproj": {}
+    "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\damie\\Desktop\\Formation\\ProjetVisioGit\\VisioConference.Data\\VisioConference.Data.csproj": {
+    "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\damie\\Desktop\\Formation\\ProjetVisioGit\\VisioConference.Data\\VisioConference.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj",
         "projectName": "VisioConference.Data",
-        "projectPath": "C:\\Users\\damie\\Desktop\\Formation\\ProjetVisioGit\\VisioConference.Data\\VisioConference.Data.csproj",
-        "packagesPath": "C:\\Users\\damie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\damie\\Desktop\\Formation\\ProjetVisioGit\\VisioConference.Data\\obj\\",
+        "projectPath": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj",
+        "packagesPath": "C:\\Users\\Admin Stagiaire\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\damie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin Stagiaire\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -77,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
