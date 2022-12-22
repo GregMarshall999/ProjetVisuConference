@@ -11,7 +11,7 @@ namespace VisioConference.Service
     public interface IUtilisateurService
     {
 
-        Task<ClaimsPrincipal> Login (string email, string password, bool isPersistent);
+        Task<ClaimsPrincipal> Login(string email, string password, bool isPersistent);
 
         Task<List<Utilisateur>> GetAllUtilisateur();
 

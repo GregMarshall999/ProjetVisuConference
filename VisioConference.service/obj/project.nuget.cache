@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y2+XYz82LNlZHfm9rAu68O4wK/f7RtnQIIsXfdhZOY1FP0DJuzDiodyPXWx2wGJaTMTpi7QGl0PXWzshzg+oLA==",
+  "dgSpecHash": "VPfWF7w8CQQoJA3n++P+y0oWFQmaFFIRZGqApFpEgrIPEILWenUjiM3kIUXhstmq9WEE8mSQiy71Q7Ae+PldIg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin Stagiaire\\Documents\\PROJET\\VisioConference.service\\VisioConference.service.csproj",
+  "projectFilePath": "C:\\Users\\Admin Stagiaire\\Documents\\PROJET\\VisioConference.Service\\VisioConference.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin Stagiaire\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Admin Stagiaire\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

@@ -14,11 +14,11 @@ namespace VisioConference.Service
     {
         IMessageDAO Dao;
 
-        public MessageService (MyContext context)
+        public MessageService(MyContext context)
         {
             IMessageDAO Dao = new MessageDAO(context);
         }
-         
+
         async Task IMessageService.DeleteMessage(Message message)
         {
             await Dao.DeleteMessage(message);

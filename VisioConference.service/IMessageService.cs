@@ -5,8 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using VisioConference.Models;
 
-namespace VisioConference.Service
-{
+namespace VisioConference.Service { 
     public interface IMessageService
     {
         Task CreateMessage(Message message);
