@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using VisioConference.DAO;
+using VisioConference.Data;
 using VisioConference.Models;
 using VisioDAO.DAO;
 
@@ -13,11 +14,11 @@ namespace VisioConference.Service
     {
         IMessageDAO _Dao;
 
-        public MessageService(IMessageDAO Dao)
+        public MessageService(IMessageDAO Dao, MyContext context)
         {
             _Dao = Dao;
         }
-
+         
         async Task IMessageService.DeleteMessage(Message message)
         {
             await _Dao.DeleteMessage(message);
