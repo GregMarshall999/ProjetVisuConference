@@ -1,0 +1,39 @@
+﻿@model VisioConference.Models.Utilisateur
+
+@{
+	ViewData["Title"] = "Login";
+}
+
+<h1>Connection</h1>
+<hr/>
+
+<div class="row">
+	<div class="col-md-4">
+		<form asp-action="Connection">
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+			<div class="form-group">
+				<label asp-for="Email" class="control-label"></label>
+				<input asp-for="Email" class="form-control"/>
+				<span asp-validation-for="Email" class="text-danger"></span>
+			</div>
+			<div class ="text-danger">@ViewData["CompteInnexistant"]</div>
+			<div class="form-group">
+				<label asp-for="MotDePasse" class="control-label"></label>
+				<input asp-for="MotDePasse" class="form-control" />
+				<span asp-validation-for="MotDePasse" class="text-danger"></span>
+			</div>
+			<div class="text-danger">@ViewData["MauvaisMotDePasse"]</div>
+			<div class="form-group">
+				<input type="submit" value="Connection" class="btn btn-primary"/>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div>
+	<a asp-action="Index">Retour</a>
+</div>
+
+@section Scripts {
+	@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

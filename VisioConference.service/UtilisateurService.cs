@@ -11,7 +11,6 @@ namespace VisioConference.Service
     public class UtilisateurService : IUtilisateurService
     {
         IUtilisateurDAO _Dao;
-
         public UtilisateurService(IUtilisateurDAO Dao)
         {
             _Dao = Dao;
