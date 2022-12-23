@@ -56,6 +56,8 @@ namespace VisioConference.Data
                 .WithMany()
                 .HasForeignKey(m => m.UtilisateurId)
                 .OnDelete(DeleteBehavior.NoAction);
+
+            //modelBuilder.Entity<Utilisateur>().HasData(new ,,,) //Seed database
         }
     }
 }
