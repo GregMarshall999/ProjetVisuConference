@@ -35,7 +35,7 @@ namespace VisioConference.Main.Controllers
 
             model.Utilisateurs = collegues;
             model.Salons = salons;
-            model.Invitee = invitee;    
+            model.Invitee = invitee;
 
             return View(model);
         }
@@ -51,6 +51,22 @@ namespace VisioConference.Main.Controllers
         {
             bool added = await _utilisateurServices
                 .AddCollegueToUtilisateur(Convert.ToInt32(User.FindFirst(ClaimTypes.NameIdentifier).Value), collegue.Email);
+            return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult CreerSalon()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreerSalon(Salon salon)
+        {
+            int utilisateurId = Convert.ToInt32(User.FindFirst(ClaimTypes.NameIdentifier).Value);
+            salon.ProprietaireId = utilisateurId;
+            salon.Proprietaire = await _utilisateurServices.GetUtilisateur(utilisateurId);
+            await _salonService.CreateSalon(salon);
             return RedirectToAction(nameof(Index));
         }
 
