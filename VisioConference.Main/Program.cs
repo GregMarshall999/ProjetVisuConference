@@ -4,6 +4,7 @@ using VisioConference.DAO;
 using VisioConference.Data;
 using VisioConference.Main.Models;
 using VisioConference.Main.Service;
+using VisioConference.Service;
 using VisioDAO.DAO;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,7 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<MyContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("VisioConferenceDataContext") ?? throw new InvalidOperationException("Connection string 'VisioConferenceDataContext' not found.")));
 
-builder.Services.AddScoped<IUtilisateurService, UtilisateurService>();
+builder.Services.AddScoped<VisioConference.Main.Service.IUtilisateurService, VisioConference.Main.Service.UtilisateurService>();
+builder.Services.AddScoped<ISalonService, SalonService>();
 
 //Injection de la DAO Utilisateur
 //Scoped durée de vie lié à la requete

@@ -3708,6 +3708,19 @@
         "runtime": {
           "bin/placeholder/VisioConference.Data.dll": {}
         }
+      },
+      "VisioConference.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "VisioConference.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VisioConference.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VisioConference.Service.dll": {}
+        }
       }
     }
   },
@@ -10518,6 +10531,11 @@
       "type": "project",
       "path": "../VisioConference.Data/VisioConference.Data.csproj",
       "msbuildProject": "../VisioConference.Data/VisioConference.Data.csproj"
+    },
+    "VisioConference.Service/1.0.0": {
+      "type": "project",
+      "path": "../VisioConference.Service/VisioConference.Service.csproj",
+      "msbuildProject": "../VisioConference.Service/VisioConference.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10526,7 +10544,8 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.12",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.11",
-      "VisioConference.Data >= 1.0.0"
+      "VisioConference.Data >= 1.0.0",
+      "VisioConference.Service >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -10564,6 +10583,9 @@
           "projectReferences": {
             "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj": {
               "projectPath": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj"
+            },
+            "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Service\\VisioConference.Service.csproj": {
+              "projectPath": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Service\\VisioConference.Service.csproj"
             }
           }
         }

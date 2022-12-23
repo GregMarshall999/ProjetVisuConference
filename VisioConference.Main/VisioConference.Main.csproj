@@ -32,6 +32,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\VisioConference.Data\VisioConference.Data.csproj" />
+    <ProjectReference Include="..\VisioConference.Service\VisioConference.Service.csproj" />
   </ItemGroup>
 
   <ItemGroup>

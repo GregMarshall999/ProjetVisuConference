@@ -1,17 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Dynamic;
 using System.Security.Claims;
-using VisioConference.Main.Service;
 using VisioConference.Models;
+using VisioConference.Service;
 
 namespace VisioConference.Main.Controllers
 {
     public class UtilisateurPageController : Controller
     {
-        private readonly IUtilisateurService _utilisateurServices;
+        private readonly Service.IUtilisateurService _utilisateurServices;
+        private readonly ISalonService _salonService;
 
-        public UtilisateurPageController(IUtilisateurService utilisateurService)
+        public UtilisateurPageController(Service.IUtilisateurService utilisateurService, ISalonService salonService)
         {
             _utilisateurServices = utilisateurService;
+            _salonService = salonService;
         }
 
         public async Task<IActionResult> Index()
@@ -19,12 +22,18 @@ namespace VisioConference.Main.Controllers
             ViewData["deconnection"] = "Déconnection";
             ViewData["name"] = User.FindFirst(ClaimTypes.Name).Value;
 
+            dynamic myModel = new ExpandoObject();
+
             ICollection<Utilisateur> collegues = await _utilisateurServices
                 .GetUtilisateurCollegues(Convert.ToInt32(User.FindFirst(ClaimTypes.NameIdentifier).Value));
 
-            ICollection<Salon> salons;
+            ICollection<Salon> salons = await _salonService
+                .GetUserSalons(Convert.ToInt32(User.FindFirst(ClaimTypes.NameIdentifier).Value));
 
-            return View(collegues);
+            myModel.Utilisateur = collegues;
+            myModel.Salon = salons;
+
+            return View(myModel);
         }
 
         public IActionResult AjouterCollegue()
