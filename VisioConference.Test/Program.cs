@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Microsoft.EntityFrameworkCore;
+using System.Security.Cryptography;
 using VisioConference.DAO;
 using VisioConference.Data;
 using VisioConference.Models;

@@ -67,6 +67,7 @@ namespace VisioDAO.DAO
             else throw new Exception("Utilisateur introuvable");
         }
 
+
         async Task<List<Utilisateur>> ISalonDAO.GetUtilisateursSalon(Salon salon)
         {
             Salon salonDB = await context.Salon.FindAsync(salon.Id);
@@ -118,16 +119,29 @@ namespace VisioDAO.DAO
             return await query.AsNoTracking().ToListAsync();
         }
 
-        // Liste Des salons dans lesquels l'utilisateur est invité
+        // Liste Des salons dans lesquels l'utilisateur a créé
         async Task<List<Salon>> ISalonDAO.GetUserSalons(int utilisateurId)
         {
-            var CollegueUtilisateur = await context.Salon
+            var salons = await context.Salon
                         .Include(p => p.Proprietaire)
                         .Where(p => p.ProprietaireId == utilisateurId)
                         .AsNoTracking()
                         .ToListAsync();
 
-            return CollegueUtilisateur;
+            return salons;
+        }
+
+        // Les salons dans lequels l'utilisateur est invité 
+        async Task<List<Salon>> ISalonDAO.GetSalonInvite(int utilisateurId)
+        {
+            var query =
+               from u in context.Utilisateur
+               join us in context.UtilisateursSalons on u.Id equals us.UtilisateurId
+               join s in context.Salon on us.SalonId equals s.Id
+               where us.UtilisateurId == utilisateurId
+               select s;
+
+            return await query.AsNoTracking().ToListAsync();
         }
     }
 }

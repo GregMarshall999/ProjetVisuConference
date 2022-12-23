@@ -30,8 +30,6 @@ namespace VisioConference.Main.Controllers
             ICollection<Salon> salons = await _salonService.GetUserSalons(utilisateurId);
             ICollection<Salon> invitee;// = await _salonService.GetSalonsInvite(utilisateurId);
 
-            invitee = new List<Salon>();
-
             model.Utilisateurs = collegues;
             model.Salons = salons;
             model.Invitee = invitee;

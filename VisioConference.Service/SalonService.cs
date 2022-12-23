@@ -63,5 +63,10 @@ namespace VisioConference.Service
             return await _Dao.GetUserSalons(utilisateurId);
         }
 
+        async Task<List<Salon>> ISalonService.GetUserInvites(int utilisateurId)
+        {
+
+            return await _Dao.GetSalonInvite(utilisateurId);
+        }
     }
 }
