@@ -1,4 +1,4 @@
-﻿@model VisioConference.Main.Data.UtilisateurSalonViewModel
+﻿@model VisioConference.Main.Data.ColleguesSalonsInvitesViewModel
 
 @{
 	ViewData["Title"] = "UtilisateurPage";
@@ -38,7 +38,7 @@
 					@Html.DisplayFor(modelItem => item.Email)
 				</td>
 				<td>
-					<a asp-action="Suprimer" asp-route-id="@item.Id">Suprimer</a>
+					<a asp-action="Suprimer" asp-route-id="@item.Id">Supprimer</a>
 				</td>
 			</tr>
 		}
@@ -59,20 +59,49 @@
 		</tr>
 	</thread>
 	<tbody>
-		@foreach (var item in Model.Utilisateurs)
+		@foreach (var item in Model.Salons)
 		{
 			<tr>
 				<td>
-					@Html.DisplayFor(modelItem => item.Nom)
+					@Html.DisplayFor(modelItem => item.Id)
 				</td>
 				<td>
-					@Html.DisplayFor(modelItem => item.Prenom)
+					
 				</td>
 				<td>
-					@Html.DisplayFor(modelItem => item.Email)
+					<a asp-action="Ajouter" asp-route-id="@item.Id">Ajouter</a>
+					<a asp-action="SupprimerSalon" asp-route-id="@item.Id">Supprimer</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+<h4>Salons Invitée</h4>
+<table class="table">
+	<thread>
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.Invitee.First().Id)
+			</th>
+			<th>
+				
+			</th>
+			<th></th>
+		</tr>
+	</thread>
+	<tbody>
+		@foreach (var item in Model.Invitee)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.Id)
 				</td>
 				<td>
-					<a asp-action="Suprimer" asp-route-id="@item.Id">Suprimer</a>
+					
+				</td>
+				<td>
+					<a asp-action="Quiter" asp-route-id="@item.Id">Quiter Salon</a>
 				</td>
 			</tr>
 		}

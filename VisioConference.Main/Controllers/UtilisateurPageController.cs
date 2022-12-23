@@ -23,18 +23,19 @@ namespace VisioConference.Main.Controllers
             ViewData["deconnection"] = "Déconnection";
             ViewData["name"] = User.FindFirst(ClaimTypes.Name).Value;
 
-            UtilisateurSalonViewModel model = new UtilisateurSalonViewModel();
+            int utilisateurId = Convert.ToInt32(User.FindFirst(ClaimTypes.NameIdentifier).Value);
+            ColleguesSalonsInvitesViewModel model = new ColleguesSalonsInvitesViewModel();
 
-            ICollection<Utilisateur> collegues = await _utilisateurServices
-                .GetUtilisateurCollegues(Convert.ToInt32(User.FindFirst(ClaimTypes.NameIdentifier).Value));
-
-            ICollection<Salon> salons = await _salonService
-                .GetUserSalons(Convert.ToInt32(User.FindFirst(ClaimTypes.NameIdentifier).Value));
+            ICollection<Utilisateur> collegues = await _utilisateurServices.GetUtilisateurCollegues(utilisateurId);
+            ICollection<Salon> salons = await _salonService.GetUserSalons(utilisateurId);
+            ICollection<Salon> invitee = await _salonService.GetSalonsInvite(utilisateurId);
 
             salons = new List<Salon>();
+            invitee = new List<Salon>();
 
             model.Utilisateurs = collegues;
             model.Salons = salons;
+            model.Invitee = invitee;    
 
             return View(model);
         }

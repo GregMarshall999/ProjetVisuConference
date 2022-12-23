@@ -61,5 +61,10 @@ namespace VisioConference.Service
         {
             return null;
         }
+
+        async Task<List<Salon>> ISalonService.GetSalonsInvite(int utilisateurId)
+        {
+            return null;
+        }
     }
 }
