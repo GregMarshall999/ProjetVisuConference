@@ -1,3 +1,43 @@
-﻿@{
+﻿@model IEnumerable<VisioConference.Models.Utilisateur>
+
+@{
 	ViewData["Title"] = "Index";
 }
+
+<h1>Inviter</h1>
+<h2>Collegue</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prenom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prenom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                <a asp-action="Invite" asp-route-id="@item.Id">Inviter</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
