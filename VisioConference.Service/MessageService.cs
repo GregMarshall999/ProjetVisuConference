@@ -34,9 +34,14 @@ namespace VisioConference.Service
             return await _Dao.GetMessageById(Id);
         }
 
-        async Task IMessageService.CreateMessage(Message message)
+        async Task IMessageService.CreateMessage(Message message, Utilisateur createurDuMessage, Salon salon)
         {
-            await _Dao.CreateMessage(message);
+            if(message.Contenu != "")
+            {
+                message.Utilisateur = createurDuMessage;
+                message.Salon = salon;
+                await _Dao.CreateMessage(message);
+            }
         }
     }
 }

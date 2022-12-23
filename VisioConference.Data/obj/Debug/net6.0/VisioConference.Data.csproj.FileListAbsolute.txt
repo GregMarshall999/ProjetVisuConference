@@ -54,3 +54,17 @@ C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Data\bin\Debug\net6.
 C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Data\bin\Debug\net6.0\VisioConference.Data.pdb
 C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Data\obj\Debug\net6.0\VisioConference.Data.genruntimeconfig.cache
 C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Data\obj\Debug\net6.0\ref\VisioConference.Data.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Data\bin\Debug\net6.0\VisioConference.Data.deps.json
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Data\bin\Debug\net6.0\VisioConference.Data.runtimeconfig.json
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Data\bin\Debug\net6.0\VisioConference.Data.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Data\bin\Debug\net6.0\VisioConference.Data.pdb
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Data\obj\Debug\net6.0\VisioConference.Data.csproj.AssemblyReference.cache
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Data\obj\Debug\net6.0\VisioConference.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Data\obj\Debug\net6.0\VisioConference.Data.AssemblyInfoInputs.cache
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Data\obj\Debug\net6.0\VisioConference.Data.AssemblyInfo.cs
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Data\obj\Debug\net6.0\VisioConference.Data.csproj.CoreCompileInputs.cache
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Data\obj\Debug\net6.0\VisioConference.Data.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Data\obj\Debug\net6.0\refint\VisioConference.Data.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Data\obj\Debug\net6.0\VisioConference.Data.pdb
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Data\obj\Debug\net6.0\VisioConference.Data.genruntimeconfig.cache
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Data\obj\Debug\net6.0\ref\VisioConference.Data.dll

@@ -28,7 +28,7 @@ namespace VisioConference.Main.Controllers
 
             ICollection<Utilisateur> collegues = await _utilisateurServices.GetUtilisateurCollegues(utilisateurId);
             ICollection<Salon> salons = await _salonService.GetUserSalons(utilisateurId);
-            ICollection<Salon> invitee = await _salonService.GetSalonsInvite(utilisateurId);
+            //ICollection<Salon> invitee = await _salonService.GetSalonsInvite(utilisateurId);
 
             invitee = new List<Salon>();
 

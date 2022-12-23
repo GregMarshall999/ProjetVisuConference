@@ -29,6 +29,5 @@ namespace VisioConference.Service
 
         Task<List<Salon>> GetUserSalons(int utilisateurId);
 
-        Task<List<Salon>> GetSalonsInvite(int utilisateurId);
     }
 }

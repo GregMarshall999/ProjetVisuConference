@@ -15,6 +15,7 @@ namespace VisioConference.Models
         }
         public int Id { get; set; }
 
+        public string Nom { get; set; }
         public virtual ICollection<Message> Messages { get; set; }
 
         [Required]
