@@ -3709,17 +3709,17 @@
           "bin/placeholder/VisioConference.Data.dll": {}
         }
       },
-      "VisioConference.Service/1.0.0": {
+      "VisioConference.service/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "VisioConference.Data": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/VisioConference.Service.dll": {}
+          "bin/placeholder/VisioConference.service.dll": {}
         },
         "runtime": {
-          "bin/placeholder/VisioConference.Service.dll": {}
+          "bin/placeholder/VisioConference.service.dll": {}
         }
       }
     }
@@ -10532,10 +10532,10 @@
       "path": "../VisioConference.Data/VisioConference.Data.csproj",
       "msbuildProject": "../VisioConference.Data/VisioConference.Data.csproj"
     },
-    "VisioConference.Service/1.0.0": {
+    "VisioConference.service/1.0.0": {
       "type": "project",
-      "path": "../VisioConference.Service/VisioConference.Service.csproj",
-      "msbuildProject": "../VisioConference.Service/VisioConference.Service.csproj"
+      "path": "../VisioConference.service/VisioConference.service.csproj",
+      "msbuildProject": "../VisioConference.service/VisioConference.service.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10545,7 +10545,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.12",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.11",
       "VisioConference.Data >= 1.0.0",
-      "VisioConference.Service >= 1.0.0"
+      "VisioConference.service >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -10555,11 +10555,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Main\\VisioConference.Main.csproj",
+      "projectUniqueName": "C:\\Users\\Admin Stagiaire\\Documents\\GitProjet2\\VisioConference.Main\\VisioConference.Main.csproj",
       "projectName": "VisioConference.Main",
-      "projectPath": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Main\\VisioConference.Main.csproj",
+      "projectPath": "C:\\Users\\Admin Stagiaire\\Documents\\GitProjet2\\VisioConference.Main\\VisioConference.Main.csproj",
       "packagesPath": "C:\\Users\\Admin Stagiaire\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Main\\obj\\",
+      "outputPath": "C:\\Users\\Admin Stagiaire\\Documents\\GitProjet2\\VisioConference.Main\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -10581,11 +10581,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj": {
-              "projectPath": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj"
+            "C:\\Users\\Admin Stagiaire\\Documents\\GitProjet2\\VisioConference.Data\\VisioConference.Data.csproj": {
+              "projectPath": "C:\\Users\\Admin Stagiaire\\Documents\\GitProjet2\\VisioConference.Data\\VisioConference.Data.csproj"
             },
-            "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Service\\VisioConference.Service.csproj": {
-              "projectPath": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Service\\VisioConference.Service.csproj"
+            "C:\\Users\\Admin Stagiaire\\Documents\\GitProjet2\\VisioConference.Service\\VisioConference.Service.csproj": {
+              "projectPath": "C:\\Users\\Admin Stagiaire\\Documents\\GitProjet2\\VisioConference.Service\\VisioConference.Service.csproj"
             }
           }
         }
@@ -10640,7 +10640,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
