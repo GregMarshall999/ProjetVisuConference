@@ -12,7 +12,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.1",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.12",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.11",
-          "VisioConference.Data": "1.0.0"
+          "VisioConference.Data": "1.0.0",
+          "VisioConference.Service": "1.0.0"
         },
         "runtime": {
           "VisioConference.Main.dll": {}
@@ -2428,6 +2429,14 @@
         "runtime": {
           "VisioConference.Data.dll": {}
         }
+      },
+      "VisioConference.Service/1.0.0": {
+        "dependencies": {
+          "VisioConference.Data": "1.0.0"
+        },
+        "runtime": {
+          "VisioConference.Service.dll": {}
+        }
       }
     }
   },
@@ -3712,6 +3721,11 @@
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
     "VisioConference.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "VisioConference.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

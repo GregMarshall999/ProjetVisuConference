@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Dynamic;
 using System.Security.Claims;
+using VisioConference.Main.Data;
 using VisioConference.Models;
 using VisioConference.Service;
 
@@ -22,7 +23,7 @@ namespace VisioConference.Main.Controllers
             ViewData["deconnection"] = "Déconnection";
             ViewData["name"] = User.FindFirst(ClaimTypes.Name).Value;
 
-            dynamic myModel = new ExpandoObject();
+            UtilisateurSalonViewModel model = new UtilisateurSalonViewModel();
 
             ICollection<Utilisateur> collegues = await _utilisateurServices
                 .GetUtilisateurCollegues(Convert.ToInt32(User.FindFirst(ClaimTypes.NameIdentifier).Value));
@@ -30,10 +31,12 @@ namespace VisioConference.Main.Controllers
             ICollection<Salon> salons = await _salonService
                 .GetUserSalons(Convert.ToInt32(User.FindFirst(ClaimTypes.NameIdentifier).Value));
 
-            myModel.Utilisateur = collegues;
-            myModel.Salon = salons;
+            salons = new List<Salon>();
 
-            return View(myModel);
+            model.Utilisateurs = collegues;
+            model.Salons = salons;
+
+            return View(model);
         }
 
         public IActionResult AjouterCollegue()

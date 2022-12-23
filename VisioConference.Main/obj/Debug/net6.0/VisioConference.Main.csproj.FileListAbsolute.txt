@@ -866,3 +866,5 @@ C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Main\obj\Debug\n
 C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Main\obj\Debug\net6.0\VisioConference.Main.pdb
 C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Main\obj\Debug\net6.0\VisioConference.Main.genruntimeconfig.cache
 C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Main\obj\Debug\net6.0\ref\VisioConference.Main.dll
+C:\Users\Admin Stagiaire\source\repos\ProjetVisuConference\VisioConference.Main\bin\Debug\net6.0\VisioConference.Service.dll
+C:\Users\Admin Stagiaire\source\repos\ProjetVisuConference\VisioConference.Main\bin\Debug\net6.0\VisioConference.Service.pdb

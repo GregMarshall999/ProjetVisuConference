@@ -1,4 +1,4 @@
-﻿@model IEnumerable<VisioConference.Models.Utilisateur>
+﻿@model VisioConference.Main.Data.UtilisateurSalonViewModel
 
 @{
 	ViewData["Title"] = "UtilisateurPage";
@@ -14,19 +14,53 @@
 	<thread>
 		<tr>
 			<th>
-				@Html.DisplayNameFor(model => model.Nom)
+				@Html.DisplayNameFor(model => model.Utilisateurs.First().Nom)
 			</th>
 			<th>
-				@Html.DisplayNameFor(model => model.Prenom)
+				@Html.DisplayNameFor(model => model.Utilisateurs.First().Prenom)
 			</th>
 			<th>
-				@Html.DisplayNameFor(model => model.Email)
+				@Html.DisplayNameFor(model => model.Utilisateurs.First().Email)
 			</th>
 			<th></th>
 		</tr>
 	</thread>
 	<tbody>
-		@foreach (var item in Model) {
+		@foreach (var item in Model.Utilisateurs) {
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.Nom)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Prenom)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Email)
+				</td>
+				<td>
+					<a asp-action="Suprimer" asp-route-id="@item.Id">Suprimer</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+<h4>Salons Créé</h4>
+<table class="table">
+	<thread>
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.Salons.First().Id)
+			</th>
+			<th>
+				
+			</th>
+			<th></th>
+		</tr>
+	</thread>
+	<tbody>
+		@foreach (var item in Model.Utilisateurs)
+		{
 			<tr>
 				<td>
 					@Html.DisplayFor(modelItem => item.Nom)

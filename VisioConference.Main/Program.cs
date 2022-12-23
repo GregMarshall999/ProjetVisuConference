@@ -12,12 +12,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<MyContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("VisioConferenceDataContext") ?? throw new InvalidOperationException("Connection string 'VisioConferenceDataContext' not found.")));
 
+//Injection services
 builder.Services.AddScoped<VisioConference.Main.Service.IUtilisateurService, VisioConference.Main.Service.UtilisateurService>();
 builder.Services.AddScoped<ISalonService, SalonService>();
 
 //Injection de la DAO Utilisateur
 //Scoped durée de vie lié à la requete
 builder.Services.AddScoped<IUtilisateurDAO, UtilisateurDAO>();
+builder.Services.AddScoped<ISalonDAO, SalonDAO>();
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>

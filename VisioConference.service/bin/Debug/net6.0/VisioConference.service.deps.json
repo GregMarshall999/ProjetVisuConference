@@ -6,12 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "VisioConference.service/1.0.0": {
+      "VisioConference.Service/1.0.0": {
         "dependencies": {
           "VisioConference.Data": "1.0.0"
         },
         "runtime": {
-          "VisioConference.service.dll": {}
+          "VisioConference.Service.dll": {}
         }
       },
       "Microsoft.CSharp/4.5.0": {},
@@ -468,7 +468,7 @@
     }
   },
   "libraries": {
-    "VisioConference.service/1.0.0": {
+    "VisioConference.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
