@@ -3709,17 +3709,17 @@
           "bin/placeholder/VisioConference.Data.dll": {}
         }
       },
-      "VisioConference.service/1.0.0": {
+      "VisioConference.Service/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "VisioConference.Data": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/VisioConference.service.dll": {}
+          "bin/placeholder/VisioConference.Service.dll": {}
         },
         "runtime": {
-          "bin/placeholder/VisioConference.service.dll": {}
+          "bin/placeholder/VisioConference.Service.dll": {}
         }
       }
     }
@@ -10532,10 +10532,10 @@
       "path": "../VisioConference.Data/VisioConference.Data.csproj",
       "msbuildProject": "../VisioConference.Data/VisioConference.Data.csproj"
     },
-    "VisioConference.service/1.0.0": {
+    "VisioConference.Service/1.0.0": {
       "type": "project",
-      "path": "../VisioConference.service/VisioConference.service.csproj",
-      "msbuildProject": "../VisioConference.service/VisioConference.service.csproj"
+      "path": "../VisioConference.Service/VisioConference.Service.csproj",
+      "msbuildProject": "../VisioConference.Service/VisioConference.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10545,7 +10545,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.12",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.11",
       "VisioConference.Data >= 1.0.0",
-      "VisioConference.service >= 1.0.0"
+      "VisioConference.Service >= 1.0.0"
     ]
   },
   "packageFolders": {
