@@ -22,7 +22,5 @@ namespace VisioConference.DAO
 
         Task<Utilisateur> GetUtilisateurByEmail(string email);
 
-
-
     }
 }
