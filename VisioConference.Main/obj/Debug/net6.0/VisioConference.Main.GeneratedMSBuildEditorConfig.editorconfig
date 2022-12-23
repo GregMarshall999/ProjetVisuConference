@@ -5,104 +5,105 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = VisioConference.Main
 build_property.RootNamespace = VisioConference.Main
-build_property.ProjectDir = C:\Users\Admin Stagiaire\source\repos\ProjetVisuConference\VisioConference.Main\
+build_property.ProjectDir = C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Main\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Admin Stagiaire\source\repos\ProjetVisuConference\VisioConference.Main
+build_property.MSBuildProjectDirectory = C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Main
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Admin Stagiaire/source/repos/ProjetVisuConference/VisioConference.Main/Views/HelloWorldView/Index.cshtml]
+[C:/Users/Admin Stagiaire/Documents/PROJET.2/VisioConference.Main/Views/HelloWorldView/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9Xb3JsZFZpZXdcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin Stagiaire/source/repos/ProjetVisuConference/VisioConference.Main/Views/HelloWorldView/Welcome.cshtml]
+[C:/Users/Admin Stagiaire/Documents/PROJET.2/VisioConference.Main/Views/HelloWorldView/Welcome.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9Xb3JsZFZpZXdcV2VsY29tZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin Stagiaire/source/repos/ProjetVisuConference/VisioConference.Main/Views/Home/Index.cshtml]
+[C:/Users/Admin Stagiaire/Documents/PROJET.2/VisioConference.Main/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin Stagiaire/source/repos/ProjetVisuConference/VisioConference.Main/Views/Home/Privacy.cshtml]
+[C:/Users/Admin Stagiaire/Documents/PROJET.2/VisioConference.Main/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin Stagiaire/source/repos/ProjetVisuConference/VisioConference.Main/Views/Login/Connected.cshtml]
+[C:/Users/Admin Stagiaire/Documents/PROJET.2/VisioConference.Main/Views/Login/Connected.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQ29ubmVjdGVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin Stagiaire/source/repos/ProjetVisuConference/VisioConference.Main/Views/Login/Connection.cshtml]
+[C:/Users/Admin Stagiaire/Documents/PROJET.2/VisioConference.Main/Views/Login/Connection.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQ29ubmVjdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin Stagiaire/source/repos/ProjetVisuConference/VisioConference.Main/Views/Login/Index.cshtml]
+[C:/Users/Admin Stagiaire/Documents/PROJET.2/VisioConference.Main/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin Stagiaire/source/repos/ProjetVisuConference/VisioConference.Main/Views/Shared/Error.cshtml]
+[C:/Users/Admin Stagiaire/Documents/PROJET.2/VisioConference.Main/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin Stagiaire/source/repos/ProjetVisuConference/VisioConference.Main/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Admin Stagiaire/Documents/PROJET.2/VisioConference.Main/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin Stagiaire/source/repos/ProjetVisuConference/VisioConference.Main/Views/SignUp/CreateAccount.cshtml]
+[C:/Users/Admin Stagiaire/Documents/PROJET.2/VisioConference.Main/Views/SignUp/CreateAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnblVwXENyZWF0ZUFjY291bnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin Stagiaire/source/repos/ProjetVisuConference/VisioConference.Main/Views/SignUp/Index.cshtml]
+[C:/Users/Admin Stagiaire/Documents/PROJET.2/VisioConference.Main/Views/SignUp/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnblVwXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin Stagiaire/source/repos/ProjetVisuConference/VisioConference.Main/Views/UtilisateurPage/AjouterCollegue.cshtml]
+[C:/Users/Admin Stagiaire/Documents/PROJET.2/VisioConference.Main/Views/UtilisateurPage/AjouterCollegue.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGlzYXRldXJQYWdlXEFqb3V0ZXJDb2xsZWd1ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin Stagiaire/source/repos/ProjetVisuConference/VisioConference.Main/Views/UtilisateurPage/Index.cshtml]
+[C:/Users/Admin Stagiaire/Documents/PROJET.2/VisioConference.Main/Views/UtilisateurPage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGlzYXRldXJQYWdlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin Stagiaire/source/repos/ProjetVisuConference/VisioConference.Main/Views/UtilisateurPage/Suprimer.cshtml]
+[C:/Users/Admin Stagiaire/Documents/PROJET.2/VisioConference.Main/Views/UtilisateurPage/Suprimer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGlzYXRldXJQYWdlXFN1cHJpbWVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin Stagiaire/source/repos/ProjetVisuConference/VisioConference.Main/Views/Utilisateurs/Create.cshtml]
+[C:/Users/Admin Stagiaire/Documents/PROJET.2/VisioConference.Main/Views/Utilisateurs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGlzYXRldXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin Stagiaire/source/repos/ProjetVisuConference/VisioConference.Main/Views/Utilisateurs/Delete.cshtml]
+[C:/Users/Admin Stagiaire/Documents/PROJET.2/VisioConference.Main/Views/Utilisateurs/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGlzYXRldXJzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin Stagiaire/source/repos/ProjetVisuConference/VisioConference.Main/Views/Utilisateurs/Details.cshtml]
+[C:/Users/Admin Stagiaire/Documents/PROJET.2/VisioConference.Main/Views/Utilisateurs/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGlzYXRldXJzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin Stagiaire/source/repos/ProjetVisuConference/VisioConference.Main/Views/Utilisateurs/Edit.cshtml]
+[C:/Users/Admin Stagiaire/Documents/PROJET.2/VisioConference.Main/Views/Utilisateurs/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGlzYXRldXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin Stagiaire/source/repos/ProjetVisuConference/VisioConference.Main/Views/Utilisateurs/Index.cshtml]
+[C:/Users/Admin Stagiaire/Documents/PROJET.2/VisioConference.Main/Views/Utilisateurs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGlzYXRldXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin Stagiaire/source/repos/ProjetVisuConference/VisioConference.Main/Views/Utilisateurs/SignUp.cshtml]
+[C:/Users/Admin Stagiaire/Documents/PROJET.2/VisioConference.Main/Views/Utilisateurs/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXRpbGlzYXRldXJzXFNpZ25VcC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin Stagiaire/source/repos/ProjetVisuConference/VisioConference.Main/Views/_ViewImports.cshtml]
+[C:/Users/Admin Stagiaire/Documents/PROJET.2/VisioConference.Main/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin Stagiaire/source/repos/ProjetVisuConference/VisioConference.Main/Views/_ViewStart.cshtml]
+[C:/Users/Admin Stagiaire/Documents/PROJET.2/VisioConference.Main/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin Stagiaire/source/repos/ProjetVisuConference/VisioConference.Main/Views/Shared/_Layout.cshtml]
+[C:/Users/Admin Stagiaire/Documents/PROJET.2/VisioConference.Main/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-vt92di9isw
