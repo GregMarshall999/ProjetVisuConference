@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.Primitives;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -24,5 +25,10 @@ namespace VisioConference.Models
         public int ProprietaireId { get; set; }
 
         public virtual ICollection<UtilisateurSalon> UtilisateursSalons { get; set; }
+
+        //public static implicit operator Salon(StringValues v)
+        //{
+            //throw new NotImplementedException();
+        //}
     }
 }

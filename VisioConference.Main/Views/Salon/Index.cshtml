@@ -2,6 +2,7 @@
 
 @{
 	ViewData["Title"] = "Index";
+	ViewData["Salon"] = Model.Salon;
 }
 
 <h1>Salon</h1>
@@ -11,9 +12,11 @@
 	<div asp-validation-summary="ModelOnly" class="text-danger"></div>
 	<div class="form-group">
 		<label class="control-label">Message</label>
-		<input asp-action="@Model.NewMessage.Contenu" />
+		<input asp-for="@Model.NewMessage.Contenu" />
 		<span asp-validation-for="@Model.NewMessage.Contenu"></span>
 	</div>
+	@Html.HiddenFor(m => m.Salon.Id)
+	@Html.Hidden("SalonId", (object)ViewBag.SalonId)
 	<div class="form-group">
 		<input type="submit" value="Entrer" class="btn, btn-primary"/>
 	</div>
@@ -24,7 +27,10 @@
 		@foreach(var message in Model.Messages) {
 			<tr>
 				<td>
-					@Html.DisplayFor(modelItem => message.Contenu);
+					@Html.DisplayFor(modelItem => message.Contenu)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => message.Utilisateur.Prenom)
 				</td>
 			</tr>
 		}

@@ -14,6 +14,7 @@ builder.Services.AddDbContext<MyContext>(options =>
 
 //Injection services
 builder.Services.AddScoped<VisioConference.Main.Service.IUtilisateurService, VisioConference.Main.Service.UtilisateurService>();
+builder.Services.AddScoped<VisioConference.Service.IUtilisateurService, VisioConference.Service.UtilisateurService>();
 builder.Services.AddScoped<ISalonService, SalonService>();
 builder.Services.AddScoped<IMessageService, MessageService>();
 
