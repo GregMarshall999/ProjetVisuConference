@@ -39,6 +39,14 @@ namespace VisioConference.Main.Controllers
             return View(model);
         }
 
+        public IActionResult Ouvrir(int? id)
+        {
+            if (id == null)
+                return NotFound();
+
+            return RedirectToAction("Index", "Salon", new { salonId = id });
+        }
+
         public IActionResult AjouterCollegue()
         {
             return View();
