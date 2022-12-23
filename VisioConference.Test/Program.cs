@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Microsoft.EntityFrameworkCore;
+using System.Security.Cryptography;
 using VisioConference.DAO;
 using VisioConference.Data;
 using VisioConference.Models;
@@ -127,3 +128,14 @@ foreach (KeyValuePair<int, Utilisateur> collègue in collègues)
     Console.WriteLine("Id: {0}, Nom de l'Utilisateur: {1}",
         collègue.Key, collègue.Value.Nom);
 }
+
+
+string MotDePasseHaché = "";
+
+u3.MotDePasse =
+
+
+byte[] data = new byte[DATA_SIZE];
+byte[] result;
+SHA512 shaM = new SHA512Managed();
+result = shaM.ComputeHash(data);
