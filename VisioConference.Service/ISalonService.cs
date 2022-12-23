@@ -26,5 +26,7 @@ namespace VisioConference.Service
         Task<Salon> GetSalonById(int id);
 
         Task DeleteSalon(Salon salon);
+
+        Task<List<Salon>> GetUserSalons(int utilisateurId);
     }
 }
