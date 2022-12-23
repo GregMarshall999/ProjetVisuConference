@@ -20,15 +20,15 @@ namespace VisioConference.Service
 
         Task<Utilisateur> GetUtilisateurById(int Id);
 
-        Task DeleteUtilisateur(Utilisateur utilisateur);
+        Task DeleteUtilisateur(int IdUtilisateur);
 
         Task<bool> AddCollegue(int utilisateurId, string collegueEmail);
 
         Task DeleteCollegue(Utilisateur utilisateur, Utilisateur UtilisateurCollegue);
 
-        Task<Dictionary<int, Utilisateur>> GetAllCollegue(Utilisateur utilisateur);
+        Task<Dictionary<int, Utilisateur>> GetAllCollegue(int IdUtilisateur);
 
-        Task<List<Utilisateur>> GetListCollegue(Utilisateur utilisateur);
+        Task<List<Utilisateur>> GetListCollegue(int Id);
 
         Task<Utilisateur> GetUtilisateurByEmail(string email);
     }

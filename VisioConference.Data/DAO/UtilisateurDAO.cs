@@ -12,7 +12,6 @@ namespace VisioDAO.DAO
 {
     public class UtilisateurDAO : AbstractDAO, IUtilisateurDAO
     {
-
         public UtilisateurDAO(MyContext context) : base(context)
         {
         }
@@ -29,8 +28,10 @@ namespace VisioDAO.DAO
             return Convert.ToBase64String(hashBytes);
         }
 
+
         async Task IUtilisateurDAO.AddUtilisateur(Utilisateur utilisateur)
         {
+            // utilisateur.MotDePasse = Hash(utilisateur.MotDePasse);
             context.Utilisateur.Add(utilisateur);
             await context.SaveChangesAsync();
         }
@@ -109,7 +110,6 @@ namespace VisioDAO.DAO
             return false;
         }
 
-
         async Task IUtilisateurDAO.DeleteCollegue(Utilisateur utilisateur, Utilisateur UtilisateurCollegue)
         {
             Utilisateur utilisateurDB = await context.Utilisateur.FindAsync(utilisateur.Id);
@@ -144,7 +144,6 @@ namespace VisioDAO.DAO
             }
             else throw new Exception("Utilisateur introuvable");
         }
-
 
         async Task<Dictionary<int, Utilisateur>> IUtilisateurDAO.GetAllCollegue(Utilisateur utilisateur)
         {

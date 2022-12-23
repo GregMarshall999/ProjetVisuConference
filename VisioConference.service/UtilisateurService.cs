@@ -27,7 +27,7 @@ namespace VisioConference.Service
         async Task<ClaimsPrincipal> IUtilisateurService.Login(string email, string password, bool isPersistent)
         {
             Utilisateur? user = await Dao.GetUtilisateurByEmail(email); //get user from dao with username and password
-           
+
             if (user is null) return new ClaimsPrincipal(
                 new ClaimsIdentity(
                     new Claim[]
@@ -57,8 +57,6 @@ namespace VisioConference.Service
         }
 
 
-        // Rdcupérer utilisateur, (ID utilisateur, Email collegue) 
-        // Renvoie true ou false selon si c'est ok
         async Task<bool> IUtilisateurService.AddCollegue(int utilisateurId, string collegueEmail)
         {
             Utilisateur utilisateurDB = await Dao.GetUtilisateurById(utilisateurId);
@@ -69,6 +67,8 @@ namespace VisioConference.Service
 
         async Task IUtilisateurService.AddUtilisateur(Utilisateur utilisateur)
         {
+
+
             await Dao.AddUtilisateur(utilisateur);
         }
 
@@ -77,14 +77,16 @@ namespace VisioConference.Service
             await Dao.DeleteCollegue(utilisateur, UtilisateurCollegue);
         }
 
-        async Task IUtilisateurService.DeleteUtilisateur(Utilisateur utilisateur)
+        async Task IUtilisateurService.DeleteUtilisateur(int IdUtilisateur)
         {
-            await Dao.DeleteUtilisateur(utilisateur);
+            Utilisateur UtilisateurDB = await Dao.GetUtilisateurById(IdUtilisateur);
+            await Dao.DeleteUtilisateur(UtilisateurDB);
         }
 
-        Task<Dictionary<int, Utilisateur>> IUtilisateurService.GetAllCollegue(Utilisateur utilisateur)
+        async Task<Dictionary<int, Utilisateur>> IUtilisateurService.GetAllCollegue(int IdUtilisateur)
         {
-            return Dao.GetAllCollegue(utilisateur);
+            Utilisateur UtilisateurDB = await Dao.GetUtilisateurById(IdUtilisateur);
+            return await Dao.GetAllCollegue(UtilisateurDB);
         }
 
         Task<List<Utilisateur>> IUtilisateurService.GetAllUtilisateur()
@@ -107,10 +109,11 @@ namespace VisioConference.Service
             await Dao.UpdateUtilisateur(utilisateur);
         }
 
-        async Task<List<Utilisateur>> IUtilisateurService.GetListCollegue(Utilisateur utilisateur)
+        async Task<List<Utilisateur>> IUtilisateurService.GetListCollegue(int IdUtilisateur)
         {
-            Dictionary<int, Utilisateur> dictionnaireCollegue = new Dictionary<int, Utilisateur>();
-            dictionnaireCollegue = await Dao.GetAllCollegue(utilisateur);
+            Utilisateur utilisateurDB = await Dao.GetUtilisateurById(IdUtilisateur);
+
+            Dictionary<int, Utilisateur> dictionnaireCollegue = new Dictionary<int, Utilisateur>(await Dao.GetAllCollegue(utilisateurDB));
 
             List<Utilisateur> collegue = new List<Utilisateur>(dictionnaireCollegue.Values);
 
