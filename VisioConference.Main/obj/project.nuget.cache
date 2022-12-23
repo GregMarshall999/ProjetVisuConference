@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KhS5y7rB00WcJJHIpaTDk2WG3Fy6dRM9SxDWEPtdAGpuvoC9rF4xsCpSnNMJmmEJVC29x0DVSxZIlosssu865A==",
+  "dgSpecHash": "MSkWf9If2FIU2qQCv6KGDq1dQpbT7zijbErcRw55mqwAd2bItZSVAgn+dFkyc/Vtum0Ladf+6dCNWJyLqcHYlQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Main\\VisioConference.Main.csproj",
+  "projectFilePath": "C:\\Users\\Admin Stagiaire\\Documents\\GitProjet2\\VisioConference.Main\\VisioConference.Main.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin Stagiaire\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Admin Stagiaire\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

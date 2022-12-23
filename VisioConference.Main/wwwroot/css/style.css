@@ -129,7 +129,8 @@ input[type="Password"] {
     width: 100%;
     display: inline-block;
     box-sizing: border-box;
-    border: none;
+    border: solid;
+    border-width:1px;
     outline: none;
     background: transparent;
     letter-spacing: .5px;
@@ -180,6 +181,7 @@ input[type="Password"] {
 .form-row.bottom {
     display: flex;
     justify-content: space-between;
+    margin-top:5px;
 }
 
 .form-row .form-check input[type="checkbox"] {
