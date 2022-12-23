@@ -1,0 +1,50 @@
+﻿@model VisioConference.Main.Data.SalonNewMessageMessagesViewModel
+
+@{
+	ViewData["Title"] = "Index";
+	ViewData["Salon"] = Model.Salon;
+}
+
+<h1>Salon</h1>
+<h2>@Html.DisplayFor(model => model.Salon.Id)</h2>
+
+@using (Html.BeginForm("AjouterMessage", "Salon", FormMethod.Post)) {
+	<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+	<div class="form-group">
+		<label class="control-label">Message</label>
+		<input asp-for="@Model.NewMessage.Contenu" />
+		<span asp-validation-for="@Model.NewMessage.Contenu"></span>
+	</div>
+	@Html.HiddenFor(m => m.Salon.Id)
+	@Html.Hidden("SalonId", (object)ViewBag.SalonId)
+	<div class="form-group">
+		<input type="submit" value="Entrer" class="btn, btn-primary"/>
+	</div>
+}
+
+<table>
+	<tbody>
+		@foreach(var message in Model.Messages) {
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => message.Contenu)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => message.Utilisateur.Prenom)
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+<div>
+	@using (Html.BeginForm("Index", "Invite", FormMethod.Post)) {
+		@Html.HiddenFor(m => m.Salon.Id);
+		@Html.Hidden("SalonId", (object)ViewBag.SalonId)
+		<input type="submit" value="Inviter collègue"/>
+	}
+</div>
+
+<div>
+	<a asp-action="Retour">Retour menu</a>
+</div>

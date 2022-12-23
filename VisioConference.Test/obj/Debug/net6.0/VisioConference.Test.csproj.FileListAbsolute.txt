@@ -1,0 +1,290 @@
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.exe
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.deps.json
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.runtimeconfig.json
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.pdb
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.csproj.AssemblyReference.cache
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.AssemblyInfoInputs.cache
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.AssemblyInfo.cs
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.csproj.CoreCompileInputs.cache
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\obj\Debug\net6.0\refint\VisioConference.Test.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.pdb
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.genruntimeconfig.cache
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\obj\Debug\net6.0\ref\VisioConference.Test.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\VisioConference.Data.dll
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\bin\Debug\net6.0\VisioConference.Data.pdb
+C:\Users\Admin Stagiaire\Documents\PROJET\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.csproj.CopyComplete
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.exe
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.deps.json
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.runtimeconfig.json
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.pdb
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\VisioConference.Data.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\bin\Debug\net6.0\VisioConference.Data.pdb
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.csproj.AssemblyReference.cache
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.AssemblyInfoInputs.cache
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.AssemblyInfo.cs
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.csproj.CoreCompileInputs.cache
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.csproj.CopyComplete
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\obj\Debug\net6.0\refint\VisioConference.Test.dll
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.pdb
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.genruntimeconfig.cache
+C:\Users\damie\Desktop\Formation\ProjetVisioGit\VisioConference.Test\obj\Debug\net6.0\ref\VisioConference.Test.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.exe
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.deps.json
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.runtimeconfig.json
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.pdb
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\VisioConference.Data.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\bin\Debug\net6.0\VisioConference.Data.pdb
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.csproj.AssemblyReference.cache
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.AssemblyInfoInputs.cache
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.AssemblyInfo.cs
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.csproj.CoreCompileInputs.cache
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.csproj.CopyComplete
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\obj\Debug\net6.0\refint\VisioConference.Test.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.pdb
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.genruntimeconfig.cache
+C:\Users\Admin Stagiaire\Documents\PROJET.2\VisioConference.Test\obj\Debug\net6.0\ref\VisioConference.Test.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.exe
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.deps.json
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.runtimeconfig.json
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.pdb
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\VisioConference.Data.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\bin\Debug\net6.0\VisioConference.Data.pdb
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.csproj.AssemblyReference.cache
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.AssemblyInfoInputs.cache
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.AssemblyInfo.cs
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.csproj.CoreCompileInputs.cache
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.csproj.CopyComplete
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\obj\Debug\net6.0\refint\VisioConference.Test.dll
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.pdb
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.genruntimeconfig.cache
+C:\Users\Admin Stagiaire\Documents\PROJET.VISIO\VisioConference.Test\obj\Debug\net6.0\ref\VisioConference.Test.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.exe
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.deps.json
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.runtimeconfig.json
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\VisioConference.Test.pdb
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\VisioConference.Data.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\bin\Debug\net6.0\VisioConference.Data.pdb
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.csproj.AssemblyReference.cache
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.AssemblyInfoInputs.cache
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.AssemblyInfo.cs
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.csproj.CoreCompileInputs.cache
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.csproj.CopyComplete
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\obj\Debug\net6.0\refint\VisioConference.Test.dll
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.pdb
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\obj\Debug\net6.0\VisioConference.Test.genruntimeconfig.cache
+C:\Users\Admin Stagiaire\Documents\GitProjet2\VisioConference.Test\obj\Debug\net6.0\ref\VisioConference.Test.dll
