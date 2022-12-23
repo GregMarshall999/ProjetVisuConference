@@ -41,6 +41,13 @@ namespace VisioConference.Main.Controllers
 			return View(model);
 		}
 
+		public async Task<IActionResult> Invite()
+		{
+			Microsoft.Extensions.Primitives.StringValues stringValues = Request.Form["SalonId"];
+
+			return RedirectToAction("Index", "Invite", new { SalonId = Convert.ToInt32(stringValues) });
+		}
+
 		[HttpPost]
 		public async Task<IActionResult> AjouterMessage(SalonNewMessageMessagesViewModel model)
 		{

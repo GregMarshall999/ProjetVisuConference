@@ -38,5 +38,13 @@
 </table>
 
 <div>
+	@using (Html.BeginForm("Index", "Invite", FormMethod.Post)) {
+		@Html.HiddenFor(m => m.Salon.Id);
+		@Html.Hidden("SalonId", (object)ViewBag.SalonId)
+		<input type="submit" value="Inviter collègue"/>
+	}
+</div>
+
+<div>
 	<a asp-action="Retour">Retour menu</a>
 </div>
