@@ -9,7 +9,7 @@ namespace VisioConference.Service
 {
     public interface IMessageService
     {
-        Task CreateMessage(Message message);
+        Task CreateMessage(Message message, Utilisateur createurDuMessage, Salon salon);
         Task<List<Message>> GetAllMessages();
         Task DeleteMessage(Message message);
         Task<Message> GetMessageById(int Id);

@@ -118,6 +118,7 @@ namespace VisioDAO.DAO
             return await query.AsNoTracking().ToListAsync();
         }
 
+        // Liste Des salons dans lesquels l'utilisateur est invité
         async Task<List<Salon>> ISalonDAO.GetUserSalons(int utilisateurId)
         {
             var CollegueUtilisateur = await context.Salon
@@ -128,35 +129,5 @@ namespace VisioDAO.DAO
 
             return CollegueUtilisateur;
         }
-
-        // Liste Des salons dans lesquels l'utilisateur est invité
-        Task<List<Salon>> ISalonDAO.GetSalonsInvite(int utilisateurId)
-        {
-            //var CollegueUtilisateur = await context.Salon
-            //           .Include(p => )
-            //           .Where(p => p.Id == utilisateurId)
-            //           .AsNoTracking()
-            //.ToListAsync();
-            return null;
-        }
-
-
-
-
-
-        //Liste des salons créés
-        //async Task<List<Salon>> ISalonService.GetUserSalons(int utilisateurId)
-        //{
-        //    return null;
-        //}
-
-        //// Liste Des salons dans lesquels l'utilisateur est invité
-
-
-
-
-
-
-
     }
 }
