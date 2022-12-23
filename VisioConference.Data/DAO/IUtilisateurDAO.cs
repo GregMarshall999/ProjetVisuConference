@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using VisioConference.Models;
+﻿using VisioConference.Models;
 
 namespace VisioConference.DAO
 {
@@ -26,6 +21,8 @@ namespace VisioConference.DAO
         Task<Dictionary<int, Utilisateur>> GetAllCollegue(Utilisateur utilisateur);
 
         Task<Utilisateur> GetUtilisateurByEmail(string email);
+
+
 
     }
 }
