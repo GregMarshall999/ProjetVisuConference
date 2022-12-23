@@ -130,14 +130,15 @@ namespace VisioDAO.DAO
         }
 
         // Liste Des salons dans lesquels l'utilisateur est invité
-        //Task<List<Salon>> ISalonDAO.GetSalonsInvite(int utilisateurId)
-        //{
-        //    var CollegueUtilisateur = await context.Salon
-        //               .Include(p => )
-        //               .Where(p => p.Id == utilisateurId)
-        //               .AsNoTracking()
-        //               .ToListAsync();
-        //}
+        Task<List<Salon>> ISalonDAO.GetSalonsInvite(int utilisateurId)
+        {
+            //var CollegueUtilisateur = await context.Salon
+            //           .Include(p => )
+            //           .Where(p => p.Id == utilisateurId)
+            //           .AsNoTracking()
+            //.ToListAsync();
+            return null;
+        }
 
 
 
