@@ -29,5 +29,7 @@ namespace VisioConference.DAO
 
         Task<List<Salon>> GetUserSalons(int utilisateurId);
 
+        Task<List<Salon>> GetSalonInvite(int utilisateurId);
+
     }
 }
