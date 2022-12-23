@@ -2,9 +2,10 @@
 
 namespace VisioConference.Main.Data
 {
-	public class UtilisateurSalonViewModel
+	public class ColleguesSalonsInvitesViewModel
 	{
 		public IEnumerable<Utilisateur> Utilisateurs { get; set; }
 		public IEnumerable<Salon> Salons { get; set; }
+		public IEnumerable<Salon> Invitee { get; set; }
 	}
 }
