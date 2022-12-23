@@ -30,7 +30,6 @@ namespace VisioConference.Main.Controllers
             ICollection<Salon> salons = await _salonService.GetUserSalons(utilisateurId);
             //ICollection<Salon> invitee = await _salonService.GetSalonsInvite(utilisateurId);
 
-            salons = new List<Salon>();
             invitee = new List<Salon>();
 
             model.Utilisateurs = collegues;
@@ -38,6 +37,14 @@ namespace VisioConference.Main.Controllers
             model.Invitee = invitee;
 
             return View(model);
+        }
+
+        public IActionResult Ouvrir(int? id)
+        {
+            if (id == null)
+                return NotFound();
+
+            return RedirectToAction("Index", "Salon", new { salonId = id });
         }
 
         public IActionResult AjouterCollegue()

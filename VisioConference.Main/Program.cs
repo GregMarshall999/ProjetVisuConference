@@ -15,11 +15,13 @@ builder.Services.AddDbContext<MyContext>(options =>
 //Injection services
 builder.Services.AddScoped<VisioConference.Main.Service.IUtilisateurService, VisioConference.Main.Service.UtilisateurService>();
 builder.Services.AddScoped<ISalonService, SalonService>();
+builder.Services.AddScoped<IMessageService, MessageService>();
 
 //Injection de la DAO Utilisateur
 //Scoped durée de vie lié à la requete
 builder.Services.AddScoped<IUtilisateurDAO, UtilisateurDAO>();
 builder.Services.AddScoped<ISalonDAO, SalonDAO>();
+builder.Services.AddScoped<IMessageDAO, MessageDAO>();
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>

@@ -361,3 +361,11 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/VisioConference.Data/obj/Debug/net6.0/VisioConference.Data.assets.cache
+/VisioConference.Data/obj/Debug/net6.0/VisioConference.Data.csproj.AssemblyReference.cache
+/VisioConference.Data/obj/Debug/net6.0/VisioConference.Data.GeneratedMSBuildEditorConfig.editorconfig
+/VisioConference.Main/obj/Debug/net6.0/VisioConference.Main.assets.cache
+/VisioConference.Main/obj/Debug/net6.0/VisioConference.Main.GeneratedMSBuildEditorConfig.editorconfig
+/VisioConference.service/obj/Debug/net6.0/VisioConference.service.assets.cache
+/VisioConference.service/obj/Debug/net6.0/VisioConference.service.GeneratedMSBuildEditorConfig.editorconfig
+/VisioConference.Test/obj/Debug/net6.0/VisioConference.Test.assets.cache
