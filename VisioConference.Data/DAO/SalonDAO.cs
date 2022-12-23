@@ -105,19 +105,27 @@ namespace VisioDAO.DAO
             await context.SaveChangesAsync();
         }
 
+
         async Task<List<Message>> ISalonDAO.GetMessagesSalon(Salon salon)
         {
-            Salon salonDB = await context.Salon.FindAsync(salon.Id);
 
-            var query =
-                from m in context.Message
-                join s in context.Salon
-                on m.SalonId equals salon.Id
-                where s.Id == salonDB.Id
-                select m;
+            var list = await context.Message
+                .Include(u => u.Utilisateur)
+                .Include(s => s.Salon)
+                .Where(s => s.SalonId == salon.Id)
+                .AsNoTracking()
+                .ToListAsync();
 
-            return await query.AsNoTracking().ToListAsync();
+            //var query =
+            //    from m in context.Message
+            //    join s in context.Salon
+            //    on m.SalonId equals salon.Id
+            //    where s.Id == salonDB.Id
+            //    select m;
+
+            return list;
         }
+
 
         // Liste Des salons dans lesquels l'utilisateur a créé
         async Task<List<Salon>> ISalonDAO.GetUserSalons(int utilisateurId)
