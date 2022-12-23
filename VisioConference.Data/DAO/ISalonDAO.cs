@@ -26,5 +26,10 @@ namespace VisioConference.DAO
         Task<Salon> GetSalonById(int id);
 
         Task DeleteSalon(Salon salon);
+
+        Task<List<Salon>> GetUserSalons(int utilisateurId);
+
+        Task<List<Salon>> GetSalonsInvite(int utilisateurId);
+
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Service\\VisioConference.Service.csproj": {}
+    "C:\\Users\\Admin Stagiaire\\Documents\\PROJET.2\\VisioConference.Service\\VisioConference.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj": {
+    "C:\\Users\\Admin Stagiaire\\Documents\\PROJET.2\\VisioConference.Data\\VisioConference.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Admin Stagiaire\\Documents\\PROJET.2\\VisioConference.Data\\VisioConference.Data.csproj",
         "projectName": "VisioConference.Data",
-        "projectPath": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj",
+        "projectPath": "C:\\Users\\Admin Stagiaire\\Documents\\PROJET.2\\VisioConference.Data\\VisioConference.Data.csproj",
         "packagesPath": "C:\\Users\\Admin Stagiaire\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Data\\obj\\",
+        "outputPath": "C:\\Users\\Admin Stagiaire\\Documents\\PROJET.2\\VisioConference.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -82,18 +82,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Service\\VisioConference.Service.csproj": {
+    "C:\\Users\\Admin Stagiaire\\Documents\\PROJET.2\\VisioConference.Service\\VisioConference.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Service\\VisioConference.Service.csproj",
+        "projectUniqueName": "C:\\Users\\Admin Stagiaire\\Documents\\PROJET.2\\VisioConference.Service\\VisioConference.Service.csproj",
         "projectName": "VisioConference.Service",
-        "projectPath": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Service\\VisioConference.Service.csproj",
+        "projectPath": "C:\\Users\\Admin Stagiaire\\Documents\\PROJET.2\\VisioConference.Service\\VisioConference.Service.csproj",
         "packagesPath": "C:\\Users\\Admin Stagiaire\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Service\\obj\\",
+        "outputPath": "C:\\Users\\Admin Stagiaire\\Documents\\PROJET.2\\VisioConference.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -115,8 +115,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj": {
-                "projectPath": "C:\\Users\\Admin Stagiaire\\source\\repos\\ProjetVisuConference\\VisioConference.Data\\VisioConference.Data.csproj"
+              "C:\\Users\\Admin Stagiaire\\Documents\\PROJET.2\\VisioConference.Data\\VisioConference.Data.csproj": {
+                "projectPath": "C:\\Users\\Admin Stagiaire\\Documents\\PROJET.2\\VisioConference.Data\\VisioConference.Data.csproj"
               }
             }
           }
@@ -146,7 +146,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

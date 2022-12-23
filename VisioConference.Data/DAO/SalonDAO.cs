@@ -116,6 +116,42 @@ namespace VisioDAO.DAO
                 select m;
 
             return await query.AsNoTracking().ToListAsync();
-        }      
+        }
+
+        async Task<List<Salon>> ISalonDAO.GetUserSalons(int utilisateurId)
+        {
+            var CollegueUtilisateur = await context.Salon
+                        .Include(p => p.Proprietaire)
+                        .Where(p => p.Id == utilisateurId)
+                        .AsNoTracking()
+                        .ToListAsync();
+
+            return CollegueUtilisateur;
+        }
+
+        // Liste Des salons dans lesquels l'utilisateur est invité
+        Task<List<Salon>> ISalonDAO.GetSalonsInvite(int utilisateurId)
+        {
+            return null;
+        }
+
+
+
+
+
+        //Liste des salons créés
+        //async Task<List<Salon>> ISalonService.GetUserSalons(int utilisateurId)
+        //{
+        //    return null;
+        //}
+
+        //// Liste Des salons dans lesquels l'utilisateur est invité
+
+
+
+
+
+
+
     }
 }
