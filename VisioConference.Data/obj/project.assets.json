@@ -2020,11 +2020,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin Stagiaire\\Documents\\PROJET.2\\VisioConference.Data\\VisioConference.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Admin Stagiaire\\Documents\\PROJET.VISIO\\VisioConference.Data\\VisioConference.Data.csproj",
       "projectName": "VisioConference.Data",
-      "projectPath": "C:\\Users\\Admin Stagiaire\\Documents\\PROJET.2\\VisioConference.Data\\VisioConference.Data.csproj",
+      "projectPath": "C:\\Users\\Admin Stagiaire\\Documents\\PROJET.VISIO\\VisioConference.Data\\VisioConference.Data.csproj",
       "packagesPath": "C:\\Users\\Admin Stagiaire\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin Stagiaire\\Documents\\PROJET.2\\VisioConference.Data\\obj\\",
+      "outputPath": "C:\\Users\\Admin Stagiaire\\Documents\\PROJET.VISIO\\VisioConference.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
